@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		127FD4C3231DC7D2009985DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 127FD4C2231DC7D2009985DD /* Assets.xcassets */; };
 		127FD4C6231DC7D2009985DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127FD4C4231DC7D2009985DD /* LaunchScreen.storyboard */; };
 		127FD4CE231F05E3009985DD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127FD4CD231F05E3009985DD /* GradientView.swift */; };
+		12B93738232E3E9B0019F454 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B93737232E3E9B0019F454 /* SwitchViewController.swift */; };
+		12B9373F232E97A60019F454 /* Old_iPhone.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B9373E232E97A60019F454 /* Old_iPhone.json */; };
+		12B9374123304C870019F454 /* X_iPhone.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B9374023304C870019F454 /* X_iPhone.json */; };
 		12BDEB0823285E1B006313C6 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB0723285E1B006313C6 /* OneViewController.swift */; };
 		12BDEB0A23296993006313C6 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB0923296993006313C6 /* TwoViewController.swift */; };
 		12BDEB0C23297B5E006313C6 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB0B23297B5E006313C6 /* ThreeViewController.swift */; };
@@ -20,9 +23,11 @@
 		12BDEB102329838F006313C6 /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB0F2329838F006313C6 /* FiveViewController.swift */; };
 		12BDEB1223298619006313C6 /* SixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB1123298619006313C6 /* SixViewController.swift */; };
 		12BDEB1423298BE7006313C6 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB1323298BE7006313C6 /* EndViewController.swift */; };
+		274BE05A6B63DD035BE191EF /* Pods_Away_Message.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7B80245E25EDD4306B028B /* Pods_Away_Message.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02F12E4F3BB542740D6842C4 /* Pods-Away Message.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Away Message.release.xcconfig"; path = "Target Support Files/Pods-Away Message/Pods-Away Message.release.xcconfig"; sourceTree = "<group>"; };
 		127FD4B8231DC7D1009985DD /* Away Message.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Away Message.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		127FD4BB231DC7D1009985DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		127FD4BD231DC7D1009985DD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +36,9 @@
 		127FD4C5231DC7D2009985DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		127FD4C7231DC7D2009985DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		127FD4CD231F05E3009985DD /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		12B93737232E3E9B0019F454 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		12B9373E232E97A60019F454 /* Old_iPhone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Old_iPhone.json; sourceTree = "<group>"; };
+		12B9374023304C870019F454 /* X_iPhone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = X_iPhone.json; sourceTree = "<group>"; };
 		12BDEB0723285E1B006313C6 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		12BDEB0923296993006313C6 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		12BDEB0B23297B5E006313C6 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +46,8 @@
 		12BDEB0F2329838F006313C6 /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 		12BDEB1123298619006313C6 /* SixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixViewController.swift; sourceTree = "<group>"; };
 		12BDEB1323298BE7006313C6 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		257F9D73DF8D6613CEA5978E /* Pods-Away Message.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Away Message.debug.xcconfig"; path = "Target Support Files/Pods-Away Message/Pods-Away Message.debug.xcconfig"; sourceTree = "<group>"; };
+		7E7B80245E25EDD4306B028B /* Pods_Away_Message.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Away_Message.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274BE05A6B63DD035BE191EF /* Pods_Away_Message.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +67,8 @@
 			children = (
 				127FD4BA231DC7D1009985DD /* Away Message */,
 				127FD4B9231DC7D1009985DD /* Products */,
+				E5446E709A535EDCC44E0FFD /* Pods */,
+				3023AAFB3CC523B685031272 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +83,8 @@
 		127FD4BA231DC7D1009985DD /* Away Message */ = {
 			isa = PBXGroup;
 			children = (
+				12B9373E232E97A60019F454 /* Old_iPhone.json */,
+				12B93736232E3D6F0019F454 /* animations */,
 				127FD4BB231DC7D1009985DD /* AppDelegate.swift */,
 				127FD4BD231DC7D1009985DD /* WelcomeViewController.swift */,
 				127FD4BF231DC7D1009985DD /* Main.storyboard */,
@@ -77,6 +92,7 @@
 				127FD4C4231DC7D2009985DD /* LaunchScreen.storyboard */,
 				127FD4C7231DC7D2009985DD /* Info.plist */,
 				127FD4CD231F05E3009985DD /* GradientView.swift */,
+				12B9374023304C870019F454 /* X_iPhone.json */,
 				12BDEB0723285E1B006313C6 /* OneViewController.swift */,
 				12BDEB0923296993006313C6 /* TwoViewController.swift */,
 				12BDEB0B23297B5E006313C6 /* ThreeViewController.swift */,
@@ -84,8 +100,33 @@
 				12BDEB0F2329838F006313C6 /* FiveViewController.swift */,
 				12BDEB1123298619006313C6 /* SixViewController.swift */,
 				12BDEB1323298BE7006313C6 /* EndViewController.swift */,
+				12B93737232E3E9B0019F454 /* SwitchViewController.swift */,
 			);
 			path = "Away Message";
+			sourceTree = "<group>";
+		};
+		12B93736232E3D6F0019F454 /* animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
+		3023AAFB3CC523B685031272 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E7B80245E25EDD4306B028B /* Pods_Away_Message.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5446E709A535EDCC44E0FFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				257F9D73DF8D6613CEA5978E /* Pods-Away Message.debug.xcconfig */,
+				02F12E4F3BB542740D6842C4 /* Pods-Away Message.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 127FD4CA231DC7D2009985DD /* Build configuration list for PBXNativeTarget "Away Message" */;
 			buildPhases = (
+				E3B88D736502ACD69FF80378 /* [CP] Check Pods Manifest.lock */,
 				127FD4B4231DC7D1009985DD /* Sources */,
 				127FD4B5231DC7D1009985DD /* Frameworks */,
 				127FD4B6231DC7D1009985DD /* Resources */,
+				8736B2EFB6F5A7DB6071223D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,13 +189,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B9373F232E97A60019F454 /* Old_iPhone.json in Resources */,
 				127FD4C6231DC7D2009985DD /* LaunchScreen.storyboard in Resources */,
+				12B9374123304C870019F454 /* X_iPhone.json in Resources */,
 				127FD4C3231DC7D2009985DD /* Assets.xcassets in Resources */,
 				127FD4C1231DC7D1009985DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8736B2EFB6F5A7DB6071223D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3B88D736502ACD69FF80378 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Away Message-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		127FD4B4231DC7D1009985DD /* Sources */ = {
@@ -165,6 +252,7 @@
 				12BDEB0E232981DA006313C6 /* FourViewController.swift in Sources */,
 				127FD4BC231DC7D1009985DD /* AppDelegate.swift in Sources */,
 				12BDEB102329838F006313C6 /* FiveViewController.swift in Sources */,
+				12B93738232E3E9B0019F454 /* SwitchViewController.swift in Sources */,
 				12BDEB1423298BE7006313C6 /* EndViewController.swift in Sources */,
 				12BDEB0C23297B5E006313C6 /* ThreeViewController.swift in Sources */,
 				127FD4CE231F05E3009985DD /* GradientView.swift in Sources */,
@@ -312,6 +400,7 @@
 		};
 		127FD4CB231DC7D2009985DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 257F9D73DF8D6613CEA5978E /* Pods-Away Message.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +419,7 @@
 		};
 		127FD4CC231DC7D2009985DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F12E4F3BB542740D6842C4 /* Pods-Away Message.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
