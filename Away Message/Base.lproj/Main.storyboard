@@ -103,10 +103,10 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQL-FX-0UO" customClass="AnimationView" customModule="Lottie">
-                                <rect key="frame" x="0.0" y="160" width="414" height="588.66666666666663"/>
+                                <rect key="frame" x="0.0" y="164" width="414" height="636"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdp-v4-tyZ">
-                                        <rect key="frame" x="152" y="515" width="110" height="31"/>
+                                        <rect key="frame" x="152" y="511" width="110" height="31"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
                                         <state key="normal" title="❯ Continue">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -126,12 +126,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="gQL-FX-0UO" firstAttribute="top" secondItem="lxv-ow-nNZ" secondAttribute="top" constant="100" id="BQD-q5-i65"/>
                             <constraint firstItem="gQL-FX-0UO" firstAttribute="centerX" secondItem="zj8-L5-cXa" secondAttribute="centerX" id="M9D-0w-gYy"/>
                             <constraint firstItem="lxv-ow-nNZ" firstAttribute="bottom" secondItem="3AR-ZL-wvR" secondAttribute="bottom" constant="25" id="MBe-1V-yuN"/>
                             <constraint firstItem="VaY-SS-vDU" firstAttribute="width" secondItem="zj8-L5-cXa" secondAttribute="width" multiplier="0.95" id="PV7-Gi-zLU"/>
                             <constraint firstItem="3AR-ZL-wvR" firstAttribute="centerX" secondItem="zj8-L5-cXa" secondAttribute="centerX" id="ROK-YH-H6c"/>
-                            <constraint firstItem="gQL-FX-0UO" firstAttribute="top" secondItem="VaY-SS-vDU" secondAttribute="bottom" constant="20" id="VVa-4I-M0b"/>
-                            <constraint firstItem="gQL-FX-0UO" firstAttribute="height" secondItem="zj8-L5-cXa" secondAttribute="height" multiplier="0.8" id="WCn-zX-EcT"/>
+                            <constraint firstItem="gQL-FX-0UO" firstAttribute="height" secondItem="zj8-L5-cXa" secondAttribute="height" constant="-100" id="WCn-zX-EcT"/>
                             <constraint firstItem="VaY-SS-vDU" firstAttribute="top" secondItem="lxv-ow-nNZ" secondAttribute="top" constant="30" id="kq7-Ns-fPK"/>
                             <constraint firstItem="lxv-ow-nNZ" firstAttribute="bottom" secondItem="Bdp-v4-tyZ" secondAttribute="bottom" constant="30" id="r0z-Tp-Ou1"/>
                             <constraint firstItem="VaY-SS-vDU" firstAttribute="centerX" secondItem="zj8-L5-cXa" secondAttribute="centerX" id="rpr-MN-IGf"/>
@@ -142,7 +142,7 @@
                     <connections>
                         <outlet property="animationView" destination="gQL-FX-0UO" id="NPM-hF-qKk"/>
                         <outlet property="continueButton" destination="Bdp-v4-tyZ" id="Uyl-3s-vqF"/>
-                        <outlet property="label" destination="VaY-SS-vDU" id="Xqq-uD-HZz"/>
+                        <outlet property="directionsLabel" destination="VaY-SS-vDU" id="Xqq-uD-HZz"/>
                         <segue destination="tp1-ru-t6S" kind="show" identifier="to1" id="GxG-Lp-0Kh"/>
                     </connections>
                 </viewController>
@@ -381,7 +381,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DND Toggle Screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="i11-cl-rut">
-                                <rect key="frame" x="62" y="260.66666666666663" width="290" height="390.33333333333348"/>
+                                <rect key="frame" x="62" y="260.66666666666674" width="290" height="390.33333333333326"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-Nk-Kgi">
                                 <rect key="frame" x="152" y="685" width="110" height="31"/>
