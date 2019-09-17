@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DeviceGuru
 
 class WelcomeViewController: UIViewController {
 
@@ -39,7 +40,11 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func continuePressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "toiPhoneX", sender: self)
+        let deviceGuru = DeviceGuru()
+        let deviceName = "\(deviceGuru.hardware())"
+        let noHomeButtonDevices = [ "iphoneX", "iphoneXS", "iphoneXSMax", "iphoneXR" ]
+        let segueIdentifier = noHomeButtonDevices.contains(deviceName) ? "toiPhoneX" : "toOldiPhone"
+        performSegue(withIdentifier: segueIdentifier, sender: self)
     }
     
 }

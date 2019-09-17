@@ -1,16 +1,20 @@
 PODS:
+  - DeviceGuru (5.1.4)
   - lottie-ios (3.1.2)
 
 DEPENDENCIES:
+  - DeviceGuru
   - lottie-ios
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - DeviceGuru
     - lottie-ios
 
 SPEC CHECKSUMS:
+  DeviceGuru: 76fbfd16d5241bc292730cd38190d52a3b8820fc
   lottie-ios: 49cd85b1f24f61a7708ad7ec76a523ab2d0e3100
 
-PODFILE CHECKSUM: 5f424637d33f7f5121ede2aeab333147a6438cea
+PODFILE CHECKSUM: 33903a8da4a2176a16644d2b378e159d9588b084
 
 COCOAPODS: 1.7.5
