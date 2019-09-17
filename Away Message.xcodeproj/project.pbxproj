@@ -13,9 +13,10 @@
 		127FD4C3231DC7D2009985DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 127FD4C2231DC7D2009985DD /* Assets.xcassets */; };
 		127FD4C6231DC7D2009985DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127FD4C4231DC7D2009985DD /* LaunchScreen.storyboard */; };
 		127FD4CE231F05E3009985DD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127FD4CD231F05E3009985DD /* GradientView.swift */; };
-		12B93738232E3E9B0019F454 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B93737232E3E9B0019F454 /* SwitchViewController.swift */; };
+		12B93738232E3E9B0019F454 /* OldSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B93737232E3E9B0019F454 /* OldSwitchViewController.swift */; };
 		12B9373F232E97A60019F454 /* Old_iPhone.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B9373E232E97A60019F454 /* Old_iPhone.json */; };
 		12B9374123304C870019F454 /* X_iPhone.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B9374023304C870019F454 /* X_iPhone.json */; };
+		12B93743233061370019F454 /* XSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B93742233061370019F454 /* XSwitchViewController.swift */; };
 		12BDEB0823285E1B006313C6 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB0723285E1B006313C6 /* OneViewController.swift */; };
 		12BDEB0A23296993006313C6 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB0923296993006313C6 /* TwoViewController.swift */; };
 		12BDEB0C23297B5E006313C6 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB0B23297B5E006313C6 /* ThreeViewController.swift */; };
@@ -36,9 +37,10 @@
 		127FD4C5231DC7D2009985DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		127FD4C7231DC7D2009985DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		127FD4CD231F05E3009985DD /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		12B93737232E3E9B0019F454 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		12B93737232E3E9B0019F454 /* OldSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldSwitchViewController.swift; sourceTree = "<group>"; };
 		12B9373E232E97A60019F454 /* Old_iPhone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Old_iPhone.json; sourceTree = "<group>"; };
 		12B9374023304C870019F454 /* X_iPhone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = X_iPhone.json; sourceTree = "<group>"; };
+		12B93742233061370019F454 /* XSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSwitchViewController.swift; sourceTree = "<group>"; };
 		12BDEB0723285E1B006313C6 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		12BDEB0923296993006313C6 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		12BDEB0B23297B5E006313C6 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
@@ -100,7 +102,8 @@
 				12BDEB0F2329838F006313C6 /* FiveViewController.swift */,
 				12BDEB1123298619006313C6 /* SixViewController.swift */,
 				12BDEB1323298BE7006313C6 /* EndViewController.swift */,
-				12B93737232E3E9B0019F454 /* SwitchViewController.swift */,
+				12B93737232E3E9B0019F454 /* OldSwitchViewController.swift */,
+				12B93742233061370019F454 /* XSwitchViewController.swift */,
 			);
 			path = "Away Message";
 			sourceTree = "<group>";
@@ -252,7 +255,8 @@
 				12BDEB0E232981DA006313C6 /* FourViewController.swift in Sources */,
 				127FD4BC231DC7D1009985DD /* AppDelegate.swift in Sources */,
 				12BDEB102329838F006313C6 /* FiveViewController.swift in Sources */,
-				12B93738232E3E9B0019F454 /* SwitchViewController.swift in Sources */,
+				12B93738232E3E9B0019F454 /* OldSwitchViewController.swift in Sources */,
+				12B93743233061370019F454 /* XSwitchViewController.swift in Sources */,
 				12BDEB1423298BE7006313C6 /* EndViewController.swift in Sources */,
 				12BDEB0C23297B5E006313C6 /* ThreeViewController.swift in Sources */,
 				127FD4CE231F05E3009985DD /* GradientView.swift in Sources */,

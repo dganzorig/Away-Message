@@ -39,7 +39,7 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func continuePressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "toSwitch", sender: self)
+        performSegue(withIdentifier: "toiPhoneX", sender: self)
     }
     
 }
