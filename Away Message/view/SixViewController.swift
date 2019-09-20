@@ -68,7 +68,7 @@ class SixViewController: UIViewController {
     }
     
     @IBAction func suggestionsPressed(_ sender: UIButton) {
-        print("Suggestions pressed!")
+        performSegue(withIdentifier: "toCategories", sender: self)
     }
     
     @IBAction func continuePressed(_ sender: UIButton) {
