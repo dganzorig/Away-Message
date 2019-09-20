@@ -14,6 +14,9 @@ class SixViewController: UIViewController {
     @IBOutlet weak var enterLabel: UILabel!
     @IBOutlet weak var screenshotImage: UIImageView!
     @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var suggestionButton: UIButton!
+    @IBOutlet weak var suggestionLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +24,23 @@ class SixViewController: UIViewController {
         self.sixLabel.alpha = 0
         self.enterLabel.alpha = 0
         self.screenshotImage.alpha = 0
+        self.suggestionLabel.alpha = 0
         self.continueButton.alpha = 0
+        
+        // draw circle around suggestion button
+        suggestionButton.bounds = CGRect(x: 0.0, y: 0.0, width: 30.0, height: 30.0)
+        suggestionButton.layer.borderWidth = 1.5
+        suggestionButton.layer.backgroundColor = UIColor.clear.cgColor
+        suggestionButton.layer.borderColor = AppConstants.defaultBlue.cgColor
+        suggestionButton.layer.cornerRadius = 15.0
+        
+        // hide suggestion button
+        let yTransform = -(suggestionButton.frame.origin.x + suggestionButton.frame.height)
+        suggestionButton.transform = CGAffineTransform(translationX: 0, y: yTransform)
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         UIView.animate(withDuration: 0.5, animations: {
             self.sixLabel.alpha = 1
         }) { (success) in
@@ -34,12 +50,25 @@ class SixViewController: UIViewController {
                 UIView.animate(withDuration: 0.75, animations: {
                     self.screenshotImage.alpha = 1
                 }, completion: { (success) in
-                    UIView.animate(withDuration: 0.5, delay: 0.3, options: [], animations: {
-                        self.continueButton.alpha = 1
-                    }, completion: nil)
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.suggestionLabel.alpha = 1
+                    }, completion: { (success) in
+                        UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.1, options: .curveEaseOut, animations: {
+                            // move suggestion button back in
+                            self.suggestionButton.transform = .identity
+                        }, completion: nil)
+                        UIView.animate(withDuration: 0.5, delay: 0.0, options: [], animations: {
+                            self.continueButton.alpha = 1
+                        }, completion: nil)
+                    })
                 })
             })
         }
+        
+    }
+    
+    @IBAction func suggestionsPressed(_ sender: UIButton) {
+        print("Suggestions pressed!")
     }
     
     @IBAction func continuePressed(_ sender: UIButton) {

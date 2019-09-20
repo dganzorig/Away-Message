@@ -6,7 +6,7 @@
 //  Copyright © 2019 Dona Ganzorig. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // Singleton class for app constants
 class AppConstants {
@@ -22,5 +22,7 @@ class AppConstants {
                 "I'm well out of town on vacation for a bit but will get back to you when I come back!"
             ])
     ]
+    
+    static let defaultBlue: UIColor = UIColor(red: 0.0 / 255.0, green: 122.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
     
 }

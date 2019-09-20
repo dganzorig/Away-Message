@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EAZ-37-JnQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yPc-uX-vQe">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -583,17 +583,37 @@
                                     <action selector="continuePressed:" destination="yPc-uX-vQe" eventType="touchUpInside" id="X3W-jv-QFJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKo-lX-cpi">
+                                <rect key="frame" x="369" y="79" width="30" height="29"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="suggestionsPressed:" destination="yPc-uX-vQe" eventType="touchUpInside" id="nMD-Ah-4oy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestions:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlz-hk-MOm">
+                                <rect key="frame" x="263.66666666666669" y="86" width="95.333333333333314" height="15"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.4793452024" blue="0.99908632040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="kKo-lX-cpi" firstAttribute="leading" secondItem="Jlz-hk-MOm" secondAttribute="trailing" constant="10" id="4Nd-xS-wnX"/>
                             <constraint firstItem="LdH-uK-M5s" firstAttribute="centerY" secondItem="f0Y-GN-jNY" secondAttribute="centerY" multiplier="0.4" id="AbH-Ke-V6h"/>
                             <constraint firstItem="ROt-Wn-vBk" firstAttribute="centerY" secondItem="f0Y-GN-jNY" secondAttribute="centerY" multiplier="0.6" id="Hvu-dq-2Yb"/>
                             <constraint firstItem="dYj-Qh-AX4" firstAttribute="height" secondItem="f0Y-GN-jNY" secondAttribute="height" multiplier="0.55" id="J40-fm-9Eu"/>
                             <constraint firstItem="ROt-Wn-vBk" firstAttribute="centerX" secondItem="f0Y-GN-jNY" secondAttribute="centerX" id="RaL-g1-lDk"/>
                             <constraint firstItem="dYj-Qh-AX4" firstAttribute="width" secondItem="f0Y-GN-jNY" secondAttribute="width" multiplier="0.8" id="VZf-dB-qt0"/>
                             <constraint firstItem="2xe-Bk-mVT" firstAttribute="centerX" secondItem="f0Y-GN-jNY" secondAttribute="centerX" id="aFn-UN-O8U"/>
+                            <constraint firstItem="Jlz-hk-MOm" firstAttribute="centerY" secondItem="kKo-lX-cpi" secondAttribute="centerY" id="cgu-Kx-KPI"/>
                             <constraint firstItem="LdH-uK-M5s" firstAttribute="centerX" secondItem="f0Y-GN-jNY" secondAttribute="centerX" id="ihk-nP-Obv"/>
+                            <constraint firstItem="KAU-C3-gjH" firstAttribute="trailing" secondItem="kKo-lX-cpi" secondAttribute="trailing" constant="15" id="miJ-eU-1wM"/>
                             <constraint firstItem="dYj-Qh-AX4" firstAttribute="centerX" secondItem="f0Y-GN-jNY" secondAttribute="centerX" id="pRs-26-3jP"/>
+                            <constraint firstItem="kKo-lX-cpi" firstAttribute="top" secondItem="KAU-C3-gjH" secondAttribute="top" constant="15" id="tli-gd-jQc"/>
                             <constraint firstItem="KAU-C3-gjH" firstAttribute="bottom" secondItem="2xe-Bk-mVT" secondAttribute="bottom" constant="20" id="u0W-xM-hPh"/>
                             <constraint firstItem="dYj-Qh-AX4" firstAttribute="top" secondItem="ROt-Wn-vBk" secondAttribute="bottom" constant="25" id="wan-9J-t1N"/>
                         </constraints>
@@ -604,6 +624,8 @@
                         <outlet property="enterLabel" destination="ROt-Wn-vBk" id="gBT-Qz-lcL"/>
                         <outlet property="screenshotImage" destination="dYj-Qh-AX4" id="csS-hp-oJg"/>
                         <outlet property="sixLabel" destination="LdH-uK-M5s" id="6q8-tZ-nHu"/>
+                        <outlet property="suggestionButton" destination="kKo-lX-cpi" id="Nui-Xg-T35"/>
+                        <outlet property="suggestionLabel" destination="Jlz-hk-MOm" id="sbx-Wk-Feb"/>
                         <segue destination="WYG-ch-xB6" kind="show" identifier="toEnd" id="lSl-gk-VCX"/>
                     </connections>
                 </viewController>
