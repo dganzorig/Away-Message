@@ -103,6 +103,15 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		125E91672335AD060068A21E /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				125E9161233491AD0068A21E /* CategoryCell.swift */,
+				125E916523349E0A0068A21E /* CategorySuggestionCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		127FD4AF231DC7D1009985DD = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +133,7 @@
 		127FD4BA231DC7D1009985DD /* Away Message */ = {
 			isa = PBXGroup;
 			children = (
+				125E91672335AD060068A21E /* cell */,
 				125E915C233461CE0068A21E /* model */,
 				125E915B233461610068A21E /* view */,
 				12B93736232E3D6F0019F454 /* animation */,
@@ -134,8 +144,6 @@
 				127FD4C7231DC7D2009985DD /* Info.plist */,
 				127FD4CD231F05E3009985DD /* GradientView.swift */,
 				125E9157233363920068A21E /* AppConstants.swift */,
-				125E9161233491AD0068A21E /* CategoryCell.swift */,
-				125E916523349E0A0068A21E /* CategorySuggestionCell.swift */,
 			);
 			path = "Away Message";
 			sourceTree = "<group>";

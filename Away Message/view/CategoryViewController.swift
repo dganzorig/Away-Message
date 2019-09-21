@@ -11,6 +11,7 @@ import UIKit
 class CategoryViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    private var lastSelectedIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,8 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // calling deselectRow to allow only 'flash' graying out of selected row
-        // tableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.lastSelectedIndex = indexPath.row
         
         // transition to screen showing messages for selected category
         performSegue(withIdentifier: "toSuggestions", sender: self)
@@ -46,9 +48,7 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toSuggestions" {
             let destinationVC: CategorySuggestionViewController = segue.destination as! CategorySuggestionViewController
-            if let index: Int = tableView.indexPathForSelectedRow?.row {
-                destinationVC.categoryEntry = self.getEntryAtIndex(index: index)
-            }
+            destinationVC.categoryEntry = self.getEntryAtIndex(index: self.lastSelectedIndex)
         }
     }
     
