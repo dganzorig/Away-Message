@@ -43,6 +43,15 @@ extension CategorySuggestionViewController: UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        // first hide from view
+        cell.transform = CGAffineTransform(translationX: UIScreen.main.bounds.width, y: 0.0)
+        
+        UIView.animate(withDuration: 0.5, delay: 0.2 * Double(indexPath.row), options: .curveEaseOut, animations: {
+            cell.transform = .identity
+        }, completion: nil)
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
