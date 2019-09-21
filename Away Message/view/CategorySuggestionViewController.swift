@@ -22,6 +22,12 @@ class CategorySuggestionViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
         
+        titleLabel.transform = CGAffineTransform(translationX: UIScreen.main.bounds.width, y: 0.0)
+        
+        UIView.animate(withDuration: 0.5) {
+            self.titleLabel.transform = .identity
+        }
+        
         if let entry: CategoryEntry = self.categoryEntry {
             titleLabel.text = "\(entry.emoji) \(entry.category)"
         } else {
@@ -47,7 +53,7 @@ extension CategorySuggestionViewController: UITableViewDelegate, UITableViewData
         // first hide from view
         cell.transform = CGAffineTransform(translationX: UIScreen.main.bounds.width, y: 0.0)
         
-        UIView.animate(withDuration: 0.5, delay: 0.2 * Double(indexPath.row), options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.2 * Double(indexPath.row + 1), options: .curveEaseOut, animations: {
             cell.transform = .identity
         }, completion: nil)
     }
