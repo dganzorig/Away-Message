@@ -13,6 +13,8 @@
 		125E9162233491AD0068A21E /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E9161233491AD0068A21E /* CategoryCell.swift */; };
 		125E916423349B790068A21E /* CategorySuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E916323349B790068A21E /* CategorySuggestionViewController.swift */; };
 		125E916623349E0A0068A21E /* CategorySuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E916523349E0A0068A21E /* CategorySuggestionCell.swift */; };
+		125E916A23365A460068A21E /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 125E916923365A460068A21E /* fa-regular-400.ttf */; };
+		125E916C23365A590068A21E /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 125E916B23365A590068A21E /* fa-brands-400.ttf */; };
 		127FD4BC231DC7D1009985DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127FD4BB231DC7D1009985DD /* AppDelegate.swift */; };
 		127FD4BE231DC7D1009985DD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127FD4BD231DC7D1009985DD /* WelcomeViewController.swift */; };
 		127FD4C1231DC7D1009985DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127FD4BF231DC7D1009985DD /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		125E9161233491AD0068A21E /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		125E916323349B790068A21E /* CategorySuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySuggestionViewController.swift; sourceTree = "<group>"; };
 		125E916523349E0A0068A21E /* CategorySuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySuggestionCell.swift; sourceTree = "<group>"; };
+		125E916923365A460068A21E /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
+		125E916B23365A590068A21E /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
 		127FD4B8231DC7D1009985DD /* Away Message.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Away Message.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		127FD4BB231DC7D1009985DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		127FD4BD231DC7D1009985DD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,15 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		125E9168233659E50068A21E /* font */ = {
+			isa = PBXGroup;
+			children = (
+				125E916923365A460068A21E /* fa-regular-400.ttf */,
+				125E916B23365A590068A21E /* fa-brands-400.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		127FD4AF231DC7D1009985DD = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +146,7 @@
 		127FD4BA231DC7D1009985DD /* Away Message */ = {
 			isa = PBXGroup;
 			children = (
+				125E9168233659E50068A21E /* font */,
 				125E91672335AD060068A21E /* cell */,
 				125E915C233461CE0068A21E /* model */,
 				125E915B233461610068A21E /* view */,
@@ -237,7 +251,9 @@
 				12B9373F232E97A60019F454 /* Old_iPhone.json in Resources */,
 				127FD4C6231DC7D2009985DD /* LaunchScreen.storyboard in Resources */,
 				12B9374123304C870019F454 /* X_iPhone.json in Resources */,
+				125E916A23365A460068A21E /* fa-regular-400.ttf in Resources */,
 				127FD4C3231DC7D2009985DD /* Assets.xcassets in Resources */,
+				125E916C23365A590068A21E /* fa-brands-400.ttf in Resources */,
 				127FD4C1231DC7D1009985DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
