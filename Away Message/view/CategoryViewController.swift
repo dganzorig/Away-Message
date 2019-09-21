@@ -11,7 +11,6 @@ import UIKit
 class CategoryViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    private var currentEntry: CategoryEntry?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,17 +29,15 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CategoryCell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") as! CategoryCell
-        let currentKey: String = Array(AppConstants.awayMessageDict.keys)[indexPath.row]
-        let currentEntry: CategoryEntry = AppConstants.awayMessageDict[currentKey]!
+        let currentEntry: CategoryEntry = self.getEntryAtIndex(index: indexPath.row)
         cell.emojiLabel.text = currentEntry.emoji
         cell.categoryLabel.text = currentEntry.category
-        self.currentEntry = currentEntry
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // calling deselectRow to allow only 'flash' graying out of selected row
-        tableView.deselectRow(at: indexPath, animated: true)
+        // tableView.deselectRow(at: indexPath, animated: true)
         
         // transition to screen showing messages for selected category
         performSegue(withIdentifier: "toSuggestions", sender: self)
@@ -49,8 +46,16 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toSuggestions" {
             let destinationVC: CategorySuggestionViewController = segue.destination as! CategorySuggestionViewController
-            destinationVC.categoryEntry = self.currentEntry!
+            if let index: Int = tableView.indexPathForSelectedRow?.row {
+                destinationVC.categoryEntry = self.getEntryAtIndex(index: index)
+            }
         }
+    }
+    
+    private func getEntryAtIndex(index: Int) -> CategoryEntry {
+        let currentKey: String = Array(AppConstants.awayMessageDict.keys)[index]
+        guard let currentEntry: CategoryEntry = AppConstants.awayMessageDict[currentKey] else { fatalError() }
+        return currentEntry
     }
     
 }
