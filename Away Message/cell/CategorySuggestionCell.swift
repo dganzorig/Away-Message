@@ -9,7 +9,7 @@
 import UIKit
 
 class CategorySuggestionCell: UITableViewCell {
-
+    
     @IBOutlet weak var messageLabel: UILabel!
     
     override func awakeFromNib() {

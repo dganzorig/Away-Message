@@ -20,6 +20,7 @@ class CategorySuggestionViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.tableFooterView = UIView()
         
         if let entry: CategoryEntry = self.categoryEntry {
             titleLabel.text = "\(entry.emoji) \(entry.category)"
