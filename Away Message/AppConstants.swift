@@ -11,6 +11,10 @@ import UIKit
 // Singleton class for app constants
 class AppConstants {
     
+    // SignOff Constants
+    static let twitterHandle: String = "@SignOffTogether"
+    
+    // Away Message Suggestion Dictionary
     static let awayMessageDict: Dictionary<String, CategoryEntry> = [
         "General": CategoryEntry(category: "General", emoji: "💬", messages: [
                 "I am currenty Signed📴 and will get back to you as soon as I can :)",
@@ -23,6 +27,7 @@ class AppConstants {
             ])
     ]
     
+    // Colors
     static let defaultBlue: UIColor = UIColor(red: 0.0 / 255.0, green: 122.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
     
 }

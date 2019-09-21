@@ -15,6 +15,7 @@
 		125E916623349E0A0068A21E /* CategorySuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E916523349E0A0068A21E /* CategorySuggestionCell.swift */; };
 		125E916A23365A460068A21E /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 125E916923365A460068A21E /* fa-regular-400.ttf */; };
 		125E916C23365A590068A21E /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 125E916B23365A590068A21E /* fa-brands-400.ttf */; };
+		125E916E233666DA0068A21E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E916D233666DA0068A21E /* Toast.swift */; };
 		127FD4BC231DC7D1009985DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127FD4BB231DC7D1009985DD /* AppDelegate.swift */; };
 		127FD4BE231DC7D1009985DD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127FD4BD231DC7D1009985DD /* WelcomeViewController.swift */; };
 		127FD4C1231DC7D1009985DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127FD4BF231DC7D1009985DD /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		125E916523349E0A0068A21E /* CategorySuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySuggestionCell.swift; sourceTree = "<group>"; };
 		125E916923365A460068A21E /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
 		125E916B23365A590068A21E /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
+		125E916D233666DA0068A21E /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		127FD4B8231DC7D1009985DD /* Away Message.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Away Message.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		127FD4BB231DC7D1009985DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		127FD4BD231DC7D1009985DD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				127FD4C7231DC7D2009985DD /* Info.plist */,
 				127FD4CD231F05E3009985DD /* GradientView.swift */,
 				125E9157233363920068A21E /* AppConstants.swift */,
+				125E916D233666DA0068A21E /* Toast.swift */,
 			);
 			path = "Away Message";
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				127FD4B5231DC7D1009985DD /* Frameworks */,
 				127FD4B6231DC7D1009985DD /* Resources */,
 				8736B2EFB6F5A7DB6071223D /* [CP] Embed Pods Frameworks */,
+				674B48D63675ADAABC240162 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +265,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		674B48D63675ADAABC240162 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8736B2EFB6F5A7DB6071223D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +331,7 @@
 				12BDEB1223298619006313C6 /* SixViewController.swift in Sources */,
 				12BDEB0A23296993006313C6 /* TwoViewController.swift in Sources */,
 				127FD4BE231DC7D1009985DD /* WelcomeViewController.swift in Sources */,
+				125E916E233666DA0068A21E /* Toast.swift in Sources */,
 				125E916423349B790068A21E /* CategorySuggestionViewController.swift in Sources */,
 				12BDEB0E232981DA006313C6 /* FourViewController.swift in Sources */,
 				127FD4BC231DC7D1009985DD /* AppDelegate.swift in Sources */,

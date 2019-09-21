@@ -34,6 +34,10 @@ class CategorySuggestionViewController: UIViewController {
             titleLabel.text = ""
         }
     }
+    
+    func showToast(message: String) {
+        Toast.show(message: message, controller: self)
+    }
 
 }
 
@@ -46,6 +50,7 @@ extension CategorySuggestionViewController: UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CategorySuggestionCell = tableView.dequeueReusableCell(withIdentifier: "categorySuggestionCell", for: indexPath) as! CategorySuggestionCell
         cell.messageLabel.text = self.categoryEntry?.messages[indexPath.row] ?? ""
+        cell.viewController = self
         return cell
     }
     

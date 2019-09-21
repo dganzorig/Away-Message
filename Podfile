@@ -8,5 +8,6 @@ target 'Away Message' do
   # Pods for Away Message
 	pod 'lottie-ios'
 	pod 'DeviceGuru'
+  pod 'TwitterKit'
 
 end
