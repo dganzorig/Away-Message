@@ -11,6 +11,7 @@ import UIKit
 class SuggestionsPageViewController: UIPageViewController {
     
     var categoryEntry: CategoryEntry?
+    var pageControl = UIPageControl()
     
     lazy var orderedViewControllers: [UIViewController] = {
         // Set up Suggestions ViewController
@@ -36,10 +37,29 @@ class SuggestionsPageViewController: UIPageViewController {
                                     animated: true,
                                     completion: nil)
         }
+        
+        self.delegate = self
+        self.configurePageControl()
     }
     
     func newVC(viewController: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        let pageContentViewController = pageViewController.viewControllers![0]
+        self.pageControl.currentPage = orderedViewControllers.firstIndex(of: pageContentViewController)!
+    }
+    
+    func configurePageControl() {
+        let height: CGFloat = 70.0
+        pageControl = UIPageControl(frame: CGRect(x: 0, y: UIScreen.main.bounds.maxY - height, width: UIScreen.main.bounds.width, height: height))
+        pageControl.numberOfPages = orderedViewControllers.count
+        pageControl.currentPage = 0
+        pageControl.tintColor = UIColor.black
+        pageControl.pageIndicatorTintColor = UIColor(red: 0.0 / 255.0, green: 0.0 / 255.0, blue: 153.0 / 255.0, alpha: 0.6)
+        pageControl.currentPageIndicatorTintColor = UIColor(red: 0.0 / 255.0, green: 0.0 / 255.0, blue: 153.0 / 255.0, alpha: 1.0)
+        self.view.addSubview(pageControl)
     }
 
 }
