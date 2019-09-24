@@ -968,7 +968,7 @@ Submit a suggestion!</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kbs-e5-AOt">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kbs-e5-AOt">
                                 <rect key="frame" x="0.0" y="84" width="414" height="612"/>
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -1022,6 +1022,7 @@ Submit a suggestion!</string>
                                                         <constraint firstAttribute="bottom" secondItem="rDv-II-MBQ" secondAttribute="bottom" constant="20" id="OHW-py-JfM"/>
                                                         <constraint firstAttribute="trailing" secondItem="rwA-gz-rzD" secondAttribute="trailing" constant="10" id="Onb-0D-DsU"/>
                                                         <constraint firstAttribute="bottom" secondItem="rwA-gz-rzD" secondAttribute="bottom" constant="5" id="QiB-x9-Uqv"/>
+                                                        <constraint firstItem="rwA-gz-rzD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ega-Oe-UAt" secondAttribute="bottom" constant="30" id="ZvP-fQ-NIh"/>
                                                         <constraint firstAttribute="trailing" secondItem="rDv-II-MBQ" secondAttribute="trailing" constant="85" id="a4Q-F3-fmT"/>
                                                         <constraint firstItem="QOx-EZ-xJ6" firstAttribute="top" secondItem="mgP-2p-RNM" secondAttribute="top" constant="10" id="ajT-tJ-XcG"/>
                                                         <constraint firstItem="rDv-II-MBQ" firstAttribute="top" secondItem="mgP-2p-RNM" secondAttribute="top" constant="20" id="ixP-DG-pSA"/>
@@ -1062,6 +1063,7 @@ Submit a suggestion!</string>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Kbs-e5-AOt" id="uH6-p4-BOm"/>
+                        <outlet property="titleLabel" destination="D7F-vR-AbP" id="HjX-VE-EQC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fct-KR-JCH" userLabel="First Responder" sceneMemberID="firstResponder"/>

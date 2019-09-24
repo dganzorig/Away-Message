@@ -63,8 +63,4 @@ extension CategorySuggestionViewController: UITableViewDelegate, UITableViewData
         }, completion: nil)
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
 }
