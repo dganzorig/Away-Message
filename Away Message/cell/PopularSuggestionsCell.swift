@@ -117,7 +117,7 @@ class PopularSuggestionsCell: UITableViewCell {
     private func updateCellUI() {
         self.messageLabel.text = self.suggestion?.message ?? ""
         // solid heart only if Suggestion is set and Suggestion is in locally-saved liked messages
-        let heartImageText = (suggestion != nil) && (RealmService.hasLikedSuggestion(docId: suggestion!.docId)) ? "" : ""
+        let heartImageText = getLikeState() == .like ? "" : ""
         heartButton.setTitle(heartImageText, for: .normal)
     }
     
