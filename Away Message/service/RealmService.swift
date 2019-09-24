@@ -19,7 +19,7 @@ class RealmService {
     }
     
     static func likedSuggestionInstances(docId: String) -> Int {
-        let queryResult: Results<RealmSuggestion> = realm.objects(RealmSuggestion.self).filter("docId == \(docId)")
+        let queryResult: Results<RealmSuggestion> = realm.objects(RealmSuggestion.self).filter("docId = '\(docId)'")
         let resultCount = queryResult.count
         return resultCount
     }
@@ -40,7 +40,7 @@ class RealmService {
     
     static func removeLikedSuggestion(docId: String) {
         guard likedSuggestionInstances(docId: docId) > 0 else { return }
-        let queryResults: Results<RealmSuggestion> = realm.objects(RealmSuggestion.self).filter("docId == \(docId)")
+        let queryResults: Results<RealmSuggestion> = realm.objects(RealmSuggestion.self).filter("docId = '\(docId)'")
         realm.delete(queryResults)
     }
     
