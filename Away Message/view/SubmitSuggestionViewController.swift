@@ -14,7 +14,7 @@ class SubmitSuggestionViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var textView: UITextView!
     let placeholderText = "Enter here"
     let placeholderColor = UIColor.lightGray
-    let typedColor = UIColor.black
+    let typedColor = UIColor.darkGray
     
     override func viewDidLoad() {
         super.viewDidLoad()
