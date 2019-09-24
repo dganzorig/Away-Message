@@ -389,7 +389,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DND Toggle Screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="i11-cl-rut">
-                                <rect key="frame" x="62" y="260.66666666666663" width="290" height="390.33333333333348"/>
+                                <rect key="frame" x="62" y="260.66666666666674" width="290" height="390.33333333333326"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-Nk-Kgi">
                                 <rect key="frame" x="152" y="685" width="110" height="31"/>

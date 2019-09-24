@@ -9,5 +9,9 @@ target 'Away Message' do
 	pod 'lottie-ios'
 	pod 'DeviceGuru'
   pod 'TwitterKit'
+  
+  # Firebase-related Pods
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
 end
