@@ -36,7 +36,7 @@
 		12BDEB102329838F006313C6 /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB0F2329838F006313C6 /* FiveViewController.swift */; };
 		12BDEB1223298619006313C6 /* SixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB1123298619006313C6 /* SixViewController.swift */; };
 		12BDEB1423298BE7006313C6 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDEB1323298BE7006313C6 /* EndViewController.swift */; };
-		4B38EECB66AAD86CADBEFEB5 /* Pods_Away_Message.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7F4ED09BCBA19BCF95C20D /* Pods_Away_Message.framework */; };
+		CD25AD0922184254E60BE781 /* Pods_Away_Message.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155FE666A4331C10FFA9DE04 /* Pods_Away_Message.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,9 +71,9 @@
 		12BDEB0F2329838F006313C6 /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 		12BDEB1123298619006313C6 /* SixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixViewController.swift; sourceTree = "<group>"; };
 		12BDEB1323298BE7006313C6 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
-		9B7F4ED09BCBA19BCF95C20D /* Pods_Away_Message.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Away_Message.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD92666C1F3A6E801B1FF8C8 /* Pods-Away Message.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Away Message.release.xcconfig"; path = "Target Support Files/Pods-Away Message/Pods-Away Message.release.xcconfig"; sourceTree = "<group>"; };
-		EB46D727D56D192845BE1307 /* Pods-Away Message.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Away Message.debug.xcconfig"; path = "Target Support Files/Pods-Away Message/Pods-Away Message.debug.xcconfig"; sourceTree = "<group>"; };
+		155FE666A4331C10FFA9DE04 /* Pods_Away_Message.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Away_Message.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53924FD5FA2DA11FAE719AD5 /* Pods-Away Message.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Away Message.release.xcconfig"; path = "Target Support Files/Pods-Away Message/Pods-Away Message.release.xcconfig"; sourceTree = "<group>"; };
+		8045A6793CAEE3F0E321C908 /* Pods-Away Message.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Away Message.debug.xcconfig"; path = "Target Support Files/Pods-Away Message/Pods-Away Message.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B38EECB66AAD86CADBEFEB5 /* Pods_Away_Message.framework in Frameworks */,
+				CD25AD0922184254E60BE781 /* Pods_Away_Message.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +141,7 @@
 				127FD4BA231DC7D1009985DD /* Away Message */,
 				127FD4B9231DC7D1009985DD /* Products */,
 				E5446E709A535EDCC44E0FFD /* Pods */,
-				450BBF115BB5987E030ECCAF /* Frameworks */,
+				A7FEC5E697A9572295D1C5CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,10 +183,10 @@
 			path = animation;
 			sourceTree = "<group>";
 		};
-		450BBF115BB5987E030ECCAF /* Frameworks */ = {
+		A7FEC5E697A9572295D1C5CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B7F4ED09BCBA19BCF95C20D /* Pods_Away_Message.framework */,
+				155FE666A4331C10FFA9DE04 /* Pods_Away_Message.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,8 +194,8 @@
 		E5446E709A535EDCC44E0FFD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EB46D727D56D192845BE1307 /* Pods-Away Message.debug.xcconfig */,
-				AD92666C1F3A6E801B1FF8C8 /* Pods-Away Message.release.xcconfig */,
+				8045A6793CAEE3F0E321C908 /* Pods-Away Message.debug.xcconfig */,
+				53924FD5FA2DA11FAE719AD5 /* Pods-Away Message.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -207,12 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 127FD4CA231DC7D2009985DD /* Build configuration list for PBXNativeTarget "Away Message" */;
 			buildPhases = (
-				9C5C5C7E789A334354B28427 /* [CP] Check Pods Manifest.lock */,
+				61FADF79132DE7C520E2E282 /* [CP] Check Pods Manifest.lock */,
 				127FD4B4231DC7D1009985DD /* Sources */,
 				127FD4B5231DC7D1009985DD /* Frameworks */,
 				127FD4B6231DC7D1009985DD /* Resources */,
-				394F4B0A43BE22726615D9FD /* [CP] Embed Pods Frameworks */,
-				37E904CE2153291BA05FC380 /* [CP] Copy Pods Resources */,
+				E30D25EFC08E078758C08F15 /* [CP] Embed Pods Frameworks */,
+				C2A5E5498A134B79224A6511 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,41 +275,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		37E904CE2153291BA05FC380 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		394F4B0A43BE22726615D9FD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C5C5C7E789A334354B28427 /* [CP] Check Pods Manifest.lock */ = {
+		61FADF79132DE7C520E2E282 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,6 +295,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2A5E5498A134B79224A6511 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E30D25EFC08E078758C08F15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Away Message/Pods-Away Message-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -502,7 +502,7 @@
 		};
 		127FD4CB231DC7D2009985DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB46D727D56D192845BE1307 /* Pods-Away Message.debug.xcconfig */;
+			baseConfigurationReference = 8045A6793CAEE3F0E321C908 /* Pods-Away Message.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,7 +521,7 @@
 		};
 		127FD4CC231DC7D2009985DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD92666C1F3A6E801B1FF8C8 /* Pods-Away Message.release.xcconfig */;
+			baseConfigurationReference = 53924FD5FA2DA11FAE719AD5 /* Pods-Away Message.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
