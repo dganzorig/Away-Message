@@ -16,18 +16,17 @@ class FirebaseService {
     static let db = Firestore.firestore()
     static let suggestionCollectionString: String = "Suggestions"
     
-    static func addSuggestion(message: String) {
+    static func addSuggestion(message: String) -> Error? {
+        var error: Error? = nil
         db.collection(suggestionCollectionString).document().setData([
             "dateCreated": Timestamp(),
             "likes": 0,
             "message": message,
         ]) { err in
-            if let err = err {
-                print("Error writing data: \(err)")
-            } else {
-                print("Document successfully written")
-            }
+            error = err
         }
+        return error
     }
+    
     
 }

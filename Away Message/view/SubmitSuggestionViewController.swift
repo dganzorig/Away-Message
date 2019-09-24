@@ -40,10 +40,19 @@ class SubmitSuggestionViewController: UIViewController, UITextViewDelegate {
         self.textView.textColor = self.placeholderColor
     }
     
+    private func showToast(message: String) {
+        Toast.show(message: message, controller: self)
+    }
+    
     @IBAction func submitPressed(_ sender: UIButton) {
         guard let message = self.textView.text else { return }
         guard !message.isEmpty else { return }
-        FirebaseService.addSuggestion(message: message)
+        if let _ = FirebaseService.addSuggestion(message: message) {
+            self.showToast(message: "There was an error submitting your suggestion, please try again later.")
+        } else {
+            self.showToast(message: "Successfully submitted your suggestion!")
+            self.setPlaceholderAttributes()
+        }
     }
     
 }

@@ -389,7 +389,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DND Toggle Screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="i11-cl-rut">
-                                <rect key="frame" x="62" y="260.66666666666663" width="290" height="390.33333333333348"/>
+                                <rect key="frame" x="62" y="260.66666666666674" width="290" height="390.33333333333326"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-Nk-Kgi">
                                 <rect key="frame" x="152" y="685" width="110" height="31"/>
@@ -697,7 +697,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Bl2-l3-9EW" customClass="SuggestionsPageViewController" customModule="Away_Message" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PL5-JG-rlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8193" y="790"/>
+            <point key="canvasLocation" x="7317" y="858"/>
         </scene>
         <!--Category View Controller-->
         <scene sceneID="KXZ-Tb-64p">
@@ -778,7 +778,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7P-dt-RxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7209" y="790"/>
+            <point key="canvasLocation" x="6478" y="859"/>
         </scene>
         <!--Category Suggestion View Controller-->
         <scene sceneID="5kb-UH-GbZ">
@@ -884,7 +884,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZqR-Ir-aR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7762" y="1625"/>
+            <point key="canvasLocation" x="7316" y="1603"/>
         </scene>
         <!--Submit Suggestion View Controller-->
         <scene sceneID="E9q-Fh-nke">
@@ -952,7 +952,7 @@ Submit a suggestion!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwC-d3-jcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8613" y="1625"/>
+            <point key="canvasLocation" x="8109" y="1603"/>
         </scene>
     </scenes>
     <resources>
