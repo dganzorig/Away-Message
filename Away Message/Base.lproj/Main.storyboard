@@ -389,7 +389,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DND Toggle Screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="i11-cl-rut">
-                                <rect key="frame" x="62" y="260.66666666666674" width="290" height="390.33333333333326"/>
+                                <rect key="frame" x="62" y="260.66666666666663" width="290" height="390.33333333333348"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-Nk-Kgi">
                                 <rect key="frame" x="152" y="685" width="110" height="31"/>
@@ -822,7 +822,7 @@
                                                                 <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
                                                             <connections>
-                                                                <action selector="clipboardPressed:" destination="o5l-WK-EXy" eventType="touchUpInside" id="pcr-42-FBm"/>
+                                                                <action selector="clipboardPressed:" destination="o5l-WK-EXy" eventType="touchUpInside" id="KgG-eu-KUP"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMm-aS-Nl0">
@@ -832,7 +832,7 @@
                                                                 <color key="titleColor" red="0.2196078431372549" green="0.63137254901960782" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
                                                             <connections>
-                                                                <action selector="twitterPressed:" destination="o5l-WK-EXy" eventType="touchUpInside" id="mTU-oM-kf4"/>
+                                                                <action selector="twitterPressed:" destination="o5l-WK-EXy" eventType="touchUpInside" id="CNM-7W-L6y"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -866,7 +866,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.21960784310000001" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HTJ-fe-9Zc" firstAttribute="bottom" secondItem="r1z-iC-3NQ" secondAttribute="bottom" constant="40" id="79a-O4-alR"/>
                             <constraint firstItem="scg-TP-1rr" firstAttribute="top" secondItem="HTJ-fe-9Zc" secondAttribute="top" constant="20" id="8bI-l7-dKn"/>
@@ -952,7 +952,121 @@ Submit a suggestion!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwC-d3-jcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8109" y="1603"/>
+            <point key="canvasLocation" x="8122" y="1603"/>
+        </scene>
+        <!--Popular Suggestions View Controller-->
+        <scene sceneID="Hxc-wT-5TS">
+            <objects>
+                <viewController storyboardIdentifier="sbPopularSuggestions" id="ZEv-82-uqN" customClass="PopularSuggestionsViewController" customModule="Away_Message" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IDM-pe-hXN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Submissions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7F-vR-AbP">
+                                <rect key="frame" x="71.666666666666686" y="40" width="271" height="24"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kbs-e5-AOt">
+                                <rect key="frame" x="0.0" y="84" width="414" height="612"/>
+                                <color key="backgroundColor" red="0.21960784310000001" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="popularSuggestionsCell" rowHeight="142" id="81v-2N-4fQ" customClass="PopularSuggestionsCell" customModule="Away_Message" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="142"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="81v-2N-4fQ" id="XsR-mN-3r9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgP-2p-RNM">
+                                                    <rect key="frame" x="20" y="10" width="374" height="122"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwA-gz-rzD">
+                                                            <rect key="frame" x="334" y="82" width="30" height="35"/>
+                                                            <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="23"/>
+                                                            <state key="normal" title="">
+                                                                <color key="titleColor" red="0.95294117649999999" green="0.0" blue="0.01784069017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDv-II-MBQ">
+                                                            <rect key="frame" x="20" y="20" width="269" height="82"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ega-Oe-UAt">
+                                                            <rect key="frame" x="334" y="10" width="30" height="35"/>
+                                                            <fontDescription key="fontDescription" name="FontAwesome5Brands-Regular" family="Font Awesome 5 Brands" pointSize="23"/>
+                                                            <state key="normal" title="">
+                                                                <color key="titleColor" red="0.21960784310000001" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="twitterPressed:" destination="81v-2N-4fQ" eventType="touchUpInside" id="l4d-DR-rxD"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOx-EZ-xJ6">
+                                                            <rect key="frame" x="299" y="10" width="30" height="35"/>
+                                                            <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="23"/>
+                                                            <state key="normal" title="">
+                                                                <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="clipboardPressed:" destination="81v-2N-4fQ" eventType="touchUpInside" id="HGE-2d-If6"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="ega-Oe-UAt" firstAttribute="leading" secondItem="QOx-EZ-xJ6" secondAttribute="trailing" constant="5" id="Au6-Kc-WMf"/>
+                                                        <constraint firstAttribute="bottom" secondItem="rDv-II-MBQ" secondAttribute="bottom" constant="20" id="OHW-py-JfM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="rwA-gz-rzD" secondAttribute="trailing" constant="10" id="Onb-0D-DsU"/>
+                                                        <constraint firstAttribute="bottom" secondItem="rwA-gz-rzD" secondAttribute="bottom" constant="5" id="QiB-x9-Uqv"/>
+                                                        <constraint firstAttribute="trailing" secondItem="rDv-II-MBQ" secondAttribute="trailing" constant="85" id="a4Q-F3-fmT"/>
+                                                        <constraint firstItem="QOx-EZ-xJ6" firstAttribute="top" secondItem="mgP-2p-RNM" secondAttribute="top" constant="10" id="ajT-tJ-XcG"/>
+                                                        <constraint firstItem="rDv-II-MBQ" firstAttribute="top" secondItem="mgP-2p-RNM" secondAttribute="top" constant="20" id="ixP-DG-pSA"/>
+                                                        <constraint firstItem="ega-Oe-UAt" firstAttribute="top" secondItem="mgP-2p-RNM" secondAttribute="top" constant="10" id="kRg-eJ-6va"/>
+                                                        <constraint firstItem="rDv-II-MBQ" firstAttribute="leading" secondItem="mgP-2p-RNM" secondAttribute="leading" constant="20" id="kk3-Fp-MWh"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ega-Oe-UAt" secondAttribute="trailing" constant="10" id="sI1-J5-zRW"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.21960784310000001" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="mgP-2p-RNM" firstAttribute="top" secondItem="XsR-mN-3r9" secondAttribute="top" constant="10" id="1Ms-Jh-vct"/>
+                                                <constraint firstAttribute="bottom" secondItem="mgP-2p-RNM" secondAttribute="bottom" constant="10" id="69R-8L-40g"/>
+                                                <constraint firstItem="mgP-2p-RNM" firstAttribute="leading" secondItem="XsR-mN-3r9" secondAttribute="leading" constant="20" id="J08-I7-8ih"/>
+                                                <constraint firstItem="mgP-2p-RNM" firstAttribute="centerX" secondItem="XsR-mN-3r9" secondAttribute="centerX" id="pDy-CD-ebE"/>
+                                                <constraint firstAttribute="trailing" secondItem="mgP-2p-RNM" secondAttribute="trailing" constant="20" id="tLD-On-i2S"/>
+                                                <constraint firstItem="mgP-2p-RNM" firstAttribute="centerY" secondItem="XsR-mN-3r9" secondAttribute="centerY" id="y3j-zE-YMe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="heartButton" destination="rwA-gz-rzD" id="F5y-K1-kHO"/>
+                                            <outlet property="messageLabel" destination="rDv-II-MBQ" id="btV-uw-uAB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99908632040000001" green="0.57451718910000005" blue="0.27580839579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kbs-e5-AOt" firstAttribute="centerX" secondItem="IDM-pe-hXN" secondAttribute="centerX" id="2Iu-9g-HWb"/>
+                            <constraint firstItem="D7F-vR-AbP" firstAttribute="centerX" secondItem="IDM-pe-hXN" secondAttribute="centerX" id="To4-Gf-VFI"/>
+                            <constraint firstItem="tfy-Dw-Nc0" firstAttribute="bottom" secondItem="Kbs-e5-AOt" secondAttribute="bottom" constant="40" id="ZRo-4k-6Li"/>
+                            <constraint firstItem="Kbs-e5-AOt" firstAttribute="top" secondItem="D7F-vR-AbP" secondAttribute="bottom" constant="20" id="o5q-km-L6W"/>
+                            <constraint firstItem="D7F-vR-AbP" firstAttribute="top" secondItem="tfy-Dw-Nc0" secondAttribute="top" constant="20" id="qD0-oy-lSA"/>
+                            <constraint firstItem="Kbs-e5-AOt" firstAttribute="width" secondItem="IDM-pe-hXN" secondAttribute="width" id="rkW-Nl-skJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tfy-Dw-Nc0"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Kbs-e5-AOt" id="uH6-p4-BOm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fct-KR-JCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8911.5942028985519" y="1602.717391304348"/>
         </scene>
     </scenes>
     <resources>

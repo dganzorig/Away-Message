@@ -21,8 +21,10 @@ class SuggestionsPageViewController: UIPageViewController {
         // Set up Suggestion Submit ViewController
         let suggestionSubmitVC = self.newVC(viewController: "sbSuggestionSubmit") as! SubmitSuggestionViewController
         
+        let popularSuggestionsVC = self.newVC(viewController: "sbPopularSuggestions") as! PopularSuggestionsViewController
+        
         // Now return them in an ordered array
-        return [ suggestionsVC, suggestionSubmitVC ]
+        return [ suggestionsVC, suggestionSubmitVC, popularSuggestionsVC ]
     }()
 
     override func viewDidLoad() {

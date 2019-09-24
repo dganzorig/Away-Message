@@ -22,6 +22,8 @@
 		127FD4C3231DC7D2009985DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 127FD4C2231DC7D2009985DD /* Assets.xcassets */; };
 		127FD4C6231DC7D2009985DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127FD4C4231DC7D2009985DD /* LaunchScreen.storyboard */; };
 		127FD4CE231F05E3009985DD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127FD4CD231F05E3009985DD /* GradientView.swift */; };
+		128648DF233A964900826888 /* PopularSuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128648DE233A964800826888 /* PopularSuggestionsViewController.swift */; };
+		128648E1233A9CE700826888 /* PopularSuggestionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128648E0233A9CE700826888 /* PopularSuggestionsCell.swift */; };
 		12AED1DF233A13C600D43AA7 /* SuggestionsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AED1DE233A13C600D43AA7 /* SuggestionsPageViewController.swift */; };
 		12AED1E1233A19E500D43AA7 /* SubmitSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AED1E0233A19E500D43AA7 /* SubmitSuggestionViewController.swift */; };
 		12AED1E3233A336E00D43AA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12AED1E2233A336E00D43AA7 /* GoogleService-Info.plist */; };
@@ -58,6 +60,8 @@
 		127FD4C5231DC7D2009985DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		127FD4C7231DC7D2009985DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		127FD4CD231F05E3009985DD /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		128648DE233A964800826888 /* PopularSuggestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSuggestionsViewController.swift; sourceTree = "<group>"; };
+		128648E0233A9CE700826888 /* PopularSuggestionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSuggestionsCell.swift; sourceTree = "<group>"; };
 		12AED1DE233A13C600D43AA7 /* SuggestionsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsPageViewController.swift; sourceTree = "<group>"; };
 		12AED1E0233A19E500D43AA7 /* SubmitSuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitSuggestionViewController.swift; sourceTree = "<group>"; };
 		12AED1E2233A336E00D43AA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				125E916323349B790068A21E /* CategorySuggestionViewController.swift */,
 				12AED1DE233A13C600D43AA7 /* SuggestionsPageViewController.swift */,
 				12AED1E0233A19E500D43AA7 /* SubmitSuggestionViewController.swift */,
+				128648DE233A964800826888 /* PopularSuggestionsViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			children = (
 				125E9161233491AD0068A21E /* CategoryCell.swift */,
 				125E916523349E0A0068A21E /* CategorySuggestionCell.swift */,
+				128648E0233A9CE700826888 /* PopularSuggestionsCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -350,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12AED1E1233A19E500D43AA7 /* SubmitSuggestionViewController.swift in Sources */,
+				128648E1233A9CE700826888 /* PopularSuggestionsCell.swift in Sources */,
 				12BDEB1223298619006313C6 /* SixViewController.swift in Sources */,
 				12BDEB0A23296993006313C6 /* TwoViewController.swift in Sources */,
 				127FD4BE231DC7D1009985DD /* WelcomeViewController.swift in Sources */,
@@ -366,6 +373,7 @@
 				12B93743233061370019F454 /* XSwitchViewController.swift in Sources */,
 				12BDEB1423298BE7006313C6 /* EndViewController.swift in Sources */,
 				125E916023347F1B0068A21E /* CategoryViewController.swift in Sources */,
+				128648DF233A964900826888 /* PopularSuggestionsViewController.swift in Sources */,
 				125E9162233491AD0068A21E /* CategoryCell.swift in Sources */,
 				12BDEB0C23297B5E006313C6 /* ThreeViewController.swift in Sources */,
 				125E9158233363920068A21E /* AppConstants.swift in Sources */,
