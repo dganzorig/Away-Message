@@ -25,6 +25,7 @@
 		12AED1DF233A13C600D43AA7 /* SuggestionsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AED1DE233A13C600D43AA7 /* SuggestionsPageViewController.swift */; };
 		12AED1E1233A19E500D43AA7 /* SubmitSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AED1E0233A19E500D43AA7 /* SubmitSuggestionViewController.swift */; };
 		12AED1E3233A336E00D43AA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12AED1E2233A336E00D43AA7 /* GoogleService-Info.plist */; };
+		12AED1E6233A3C9900D43AA7 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AED1E5233A3C9900D43AA7 /* FirebaseService.swift */; };
 		12B93738232E3E9B0019F454 /* OldSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B93737232E3E9B0019F454 /* OldSwitchViewController.swift */; };
 		12B9373F232E97A60019F454 /* Old_iPhone.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B9373E232E97A60019F454 /* Old_iPhone.json */; };
 		12B9374123304C870019F454 /* X_iPhone.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B9374023304C870019F454 /* X_iPhone.json */; };
@@ -60,6 +61,7 @@
 		12AED1DE233A13C600D43AA7 /* SuggestionsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsPageViewController.swift; sourceTree = "<group>"; };
 		12AED1E0233A19E500D43AA7 /* SubmitSuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitSuggestionViewController.swift; sourceTree = "<group>"; };
 		12AED1E2233A336E00D43AA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		12AED1E5233A3C9900D43AA7 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		12B93737232E3E9B0019F454 /* OldSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldSwitchViewController.swift; sourceTree = "<group>"; };
 		12B9373E232E97A60019F454 /* Old_iPhone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Old_iPhone.json; sourceTree = "<group>"; };
 		12B9374023304C870019F454 /* X_iPhone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = X_iPhone.json; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		127FD4BA231DC7D1009985DD /* Away Message */ = {
 			isa = PBXGroup;
 			children = (
+				12AED1E4233A3C8200D43AA7 /* service */,
 				125E9168233659E50068A21E /* font */,
 				125E91672335AD060068A21E /* cell */,
 				125E915C233461CE0068A21E /* model */,
@@ -172,6 +175,14 @@
 				125E916D233666DA0068A21E /* Toast.swift */,
 			);
 			path = "Away Message";
+			sourceTree = "<group>";
+		};
+		12AED1E4233A3C8200D43AA7 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				12AED1E5233A3C9900D43AA7 /* FirebaseService.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		12B93736232E3D6F0019F454 /* animation */ = {
@@ -342,6 +353,7 @@
 				12BDEB1223298619006313C6 /* SixViewController.swift in Sources */,
 				12BDEB0A23296993006313C6 /* TwoViewController.swift in Sources */,
 				127FD4BE231DC7D1009985DD /* WelcomeViewController.swift in Sources */,
+				12AED1E6233A3C9900D43AA7 /* FirebaseService.swift in Sources */,
 				125E916E233666DA0068A21E /* Toast.swift in Sources */,
 				125E916423349B790068A21E /* CategorySuggestionViewController.swift in Sources */,
 				12AED1DF233A13C600D43AA7 /* SuggestionsPageViewController.swift in Sources */,

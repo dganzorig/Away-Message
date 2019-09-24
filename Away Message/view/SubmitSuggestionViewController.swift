@@ -41,7 +41,9 @@ class SubmitSuggestionViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func submitPressed(_ sender: UIButton) {
-        // Do database call
+        guard let message = self.textView.text else { return }
+        guard !message.isEmpty else { return }
+        FirebaseService.addSuggestion(message: message)
     }
     
 }
