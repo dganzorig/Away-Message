@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SubmitSuggestionViewController: UIPageViewController, UITextViewDelegate {
+class SubmitSuggestionViewController: UIViewController, UITextViewDelegate {
 
     
     @IBOutlet weak var textView: UITextView!
