@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1204C8FC233AAC150072438C /* RealmSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204C8FB233AAC150072438C /* RealmSuggestion.swift */; };
+		1204C8FE233AB55B0072438C /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204C8FD233AB55B0072438C /* Suggestion.swift */; };
+		1204C900233AC9770072438C /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204C8FF233AC9770072438C /* RealmService.swift */; };
 		125E9158233363920068A21E /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E9157233363920068A21E /* AppConstants.swift */; };
 		125E915E233461FC0068A21E /* CategoryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E915D233461FC0068A21E /* CategoryEntry.swift */; };
 		125E916023347F1B0068A21E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E915F23347F1B0068A21E /* CategoryViewController.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1204C8FB233AAC150072438C /* RealmSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmSuggestion.swift; path = "Away Message/RealmSuggestion.swift"; sourceTree = SOURCE_ROOT; };
+		1204C8FD233AB55B0072438C /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+		1204C8FF233AC9770072438C /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		125E9157233363920068A21E /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		125E915D233461FC0068A21E /* CategoryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEntry.swift; sourceTree = "<group>"; };
 		125E915F23347F1B0068A21E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				125E915D233461FC0068A21E /* CategoryEntry.swift */,
+				1204C8FB233AAC150072438C /* RealmSuggestion.swift */,
+				1204C8FD233AB55B0072438C /* Suggestion.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				12AED1E5233A3C9900D43AA7 /* FirebaseService.swift */,
+				1204C8FF233AC9770072438C /* RealmService.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -368,13 +377,16 @@
 				127FD4BC231DC7D1009985DD /* AppDelegate.swift in Sources */,
 				12BDEB102329838F006313C6 /* FiveViewController.swift in Sources */,
 				125E915E233461FC0068A21E /* CategoryEntry.swift in Sources */,
+				1204C900233AC9770072438C /* RealmService.swift in Sources */,
 				12B93738232E3E9B0019F454 /* OldSwitchViewController.swift in Sources */,
 				125E916623349E0A0068A21E /* CategorySuggestionCell.swift in Sources */,
 				12B93743233061370019F454 /* XSwitchViewController.swift in Sources */,
 				12BDEB1423298BE7006313C6 /* EndViewController.swift in Sources */,
+				1204C8FE233AB55B0072438C /* Suggestion.swift in Sources */,
 				125E916023347F1B0068A21E /* CategoryViewController.swift in Sources */,
 				128648DF233A964900826888 /* PopularSuggestionsViewController.swift in Sources */,
 				125E9162233491AD0068A21E /* CategoryCell.swift in Sources */,
+				1204C8FC233AAC150072438C /* RealmSuggestion.swift in Sources */,
 				12BDEB0C23297B5E006313C6 /* ThreeViewController.swift in Sources */,
 				125E9158233363920068A21E /* AppConstants.swift in Sources */,
 				127FD4CE231F05E3009985DD /* GradientView.swift in Sources */,

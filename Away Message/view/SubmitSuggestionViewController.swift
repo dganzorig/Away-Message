@@ -62,6 +62,7 @@ class SubmitSuggestionViewController: UIViewController, UITextViewDelegate {
     @IBAction func submitPressed(_ sender: UIButton) {
         guard let message = self.textView.text else { return }
         guard !message.isEmpty else { return }
+        guard !(message == placeholderText) else { return }
         if let _ = FirebaseService.addSuggestion(message: message) {
             self.showToast(message: "There was an error submitting your suggestion, please try again later.")
         } else {

@@ -9,6 +9,7 @@ target 'Away Message' do
 	pod 'lottie-ios'
 	pod 'DeviceGuru'
   pod 'TwitterKit'
+  pod 'RealmSwift'
   
   # Firebase-related Pods
   pod 'Firebase/Core'

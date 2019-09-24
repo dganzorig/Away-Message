@@ -28,5 +28,21 @@ class FirebaseService {
         return error
     }
     
+    static func getAllSuggestions(completionHandler: @escaping (_ suggestions: [Suggestion]?) -> ())  {
+        var suggestions: [Suggestion]?
+        db.collection(suggestionCollectionString).getDocuments { (querySnapshot, err) in
+            if err == nil {
+                if let snapshot = querySnapshot {
+                    suggestions = snapshot.documents.map({ (doc) -> Suggestion in
+                        let docId: String = doc.documentID
+                        let newSuggestion = Suggestion(docId: docId, data: doc.data())
+                        return newSuggestion
+                    })
+                    // completionHandler(suggestions)
+                }
+            }
+            completionHandler(suggestions)
+        }
+    }
     
 }

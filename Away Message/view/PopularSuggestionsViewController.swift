@@ -12,8 +12,7 @@ class PopularSuggestionsViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    
-    var messages = [ "This is the first message", "This is the second message that is really really really really really really really really REAAAALLLYYY loooooonnnngg", "Some other message that is still pretty decently long for example's purposes", "Filler", "Filler", "Filler", "Filler" ]
+    private var suggestions: [Suggestion]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +30,17 @@ class PopularSuggestionsViewController: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        FirebaseService.getAllSuggestions { (suggestions) in
+            if suggestions == nil {
+                self.showToast(message: "Error loading suggestions")
+            } else {
+                self.suggestions = suggestions
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     func showToast(message: String) {
         Toast.show(message: message, controller: self)
     }
@@ -40,13 +50,16 @@ class PopularSuggestionsViewController: UIViewController {
 extension PopularSuggestionsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.messages.count
+        return self.suggestions?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: PopularSuggestionsCell = tableView.dequeueReusableCell(withIdentifier: "popularSuggestionsCell") as! PopularSuggestionsCell
-        cell.viewController = self
-        cell.messageLabel.text = self.messages[indexPath.row]
+        if let suggestion = self.suggestions?[indexPath.row] {
+            cell.viewController = self
+            cell.suggestion = suggestion
+            // cell.messageLabel.text = suggestion.message
+        }
         return cell
     }
     

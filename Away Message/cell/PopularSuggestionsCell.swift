@@ -9,21 +9,26 @@
 import UIKit
 import TwitterKit
 
+enum LikeState {
+    case like
+    case none
+}
+
 class PopularSuggestionsCell: UITableViewCell {
     
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var heartButton: UIButton!
     var viewController: PopularSuggestionsViewController?
+    var suggestion: Suggestion? {
+        didSet {
+            updateCellUI()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        self.updateCellUI()
     }
 
     @IBAction func clipboardPressed(_ sender: UIButton) {
@@ -70,6 +75,33 @@ class PopularSuggestionsCell: UITableViewCell {
                 vc.showToast(message: "Canceled Twitter posting")
             }
         })
+    }
+    
+    @IBAction func heartPressed(_ sender: UIButton) {
+        let likeState = getLikeState()
+        
+        if likeState == .none {
+            // person wants to like the message
+        } else {
+            // person wants to unlike the message
+        }
+    }
+    
+    private func getLikeState() -> LikeState {
+        var likeState: LikeState = .none
+        if let suggestion = self.suggestion {
+            if RealmService.hasLikedSuggestion(docId: suggestion.docId) {
+                likeState = .like
+            }
+        }
+        return likeState
+    }
+    
+    private func updateCellUI() {
+        self.messageLabel.text = self.suggestion?.message ?? ""
+        // solid heart only if Suggestion is set and Suggestion is in locally-saved liked messages
+        let heartImageText = (suggestion != nil) && (RealmService.hasLikedSuggestion(docId: suggestion!.docId)) ? "" : ""
+        heartButton.setTitle(heartImageText, for: .normal)
     }
     
 }
