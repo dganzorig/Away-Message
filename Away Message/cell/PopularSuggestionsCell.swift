@@ -9,11 +9,6 @@
 import UIKit
 import TwitterKit
 
-enum LikeState {
-    case like
-    case none
-}
-
 class PopularSuggestionsCell: UITableViewCell {
     
     @IBOutlet weak var messageLabel: UILabel!
@@ -82,9 +77,31 @@ class PopularSuggestionsCell: UITableViewCell {
         
         if likeState == .none {
             // person wants to like the message
+            if let suggestion = suggestion {
+                FirebaseService.incrementLike(docId: suggestion.docId) { (success) in
+                    if (success) {
+                        self.viewController?.showToast(message: "You have liked the suggestion")
+                        RealmService.addLikedSuggestion(docId: suggestion.docId)
+                    } else {
+                        self.viewController?.showToast(message: "There was an error liking the suggestion")
+                    }
+                }
+            }
         } else {
             // person wants to unlike the message
+            if let suggestion = suggestion {
+                FirebaseService.decrementLike(docId: suggestion.docId) { (success) in
+                    if (success) {
+                        self.viewController?.showToast(message: "You have unliked the suggestion")
+                        RealmService.removeLikedSuggestion(docId: suggestion.docId)
+                    } else {
+                        self.viewController?.showToast(message: "There was an error unliking the suggestion")
+                    }
+                }
+            }
         }
+        
+        self.updateCellUI()
     }
     
     private func getLikeState() -> LikeState {

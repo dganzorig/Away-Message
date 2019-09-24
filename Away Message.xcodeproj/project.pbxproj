@@ -10,6 +10,7 @@
 		1204C8FC233AAC150072438C /* RealmSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204C8FB233AAC150072438C /* RealmSuggestion.swift */; };
 		1204C8FE233AB55B0072438C /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204C8FD233AB55B0072438C /* Suggestion.swift */; };
 		1204C900233AC9770072438C /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204C8FF233AC9770072438C /* RealmService.swift */; };
+		1204C903233AD3A50072438C /* LikeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204C902233AD3A50072438C /* LikeState.swift */; };
 		125E9158233363920068A21E /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E9157233363920068A21E /* AppConstants.swift */; };
 		125E915E233461FC0068A21E /* CategoryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E915D233461FC0068A21E /* CategoryEntry.swift */; };
 		125E916023347F1B0068A21E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E915F23347F1B0068A21E /* CategoryViewController.swift */; };
@@ -49,6 +50,7 @@
 		1204C8FB233AAC150072438C /* RealmSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmSuggestion.swift; path = "Away Message/RealmSuggestion.swift"; sourceTree = SOURCE_ROOT; };
 		1204C8FD233AB55B0072438C /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 		1204C8FF233AC9770072438C /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		1204C902233AD3A50072438C /* LikeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeState.swift; sourceTree = "<group>"; };
 		125E9157233363920068A21E /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		125E915D233461FC0068A21E /* CategoryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEntry.swift; sourceTree = "<group>"; };
 		125E915F23347F1B0068A21E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1204C901233AD3910072438C /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				1204C902233AD3A50072438C /* LikeState.swift */,
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
 		125E915B233461610068A21E /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,7 @@
 		127FD4BA231DC7D1009985DD /* Away Message */ = {
 			isa = PBXGroup;
 			children = (
+				1204C901233AD3910072438C /* enum */,
 				12AED1E4233A3C8200D43AA7 /* service */,
 				125E9168233659E50068A21E /* font */,
 				125E91672335AD060068A21E /* cell */,
@@ -388,6 +399,7 @@
 				125E9162233491AD0068A21E /* CategoryCell.swift in Sources */,
 				1204C8FC233AAC150072438C /* RealmSuggestion.swift in Sources */,
 				12BDEB0C23297B5E006313C6 /* ThreeViewController.swift in Sources */,
+				1204C903233AD3A50072438C /* LikeState.swift in Sources */,
 				125E9158233363920068A21E /* AppConstants.swift in Sources */,
 				127FD4CE231F05E3009985DD /* GradientView.swift in Sources */,
 				12BDEB0823285E1B006313C6 /* OneViewController.swift in Sources */,

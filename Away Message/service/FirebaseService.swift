@@ -28,7 +28,7 @@ class FirebaseService {
         return error
     }
     
-    static func getAllSuggestions(completionHandler: @escaping (_ suggestions: [Suggestion]?) -> ())  {
+    static func getAllSuggestions(completionHandler: @escaping (_ suggestions: [Suggestion]?) -> ()) {
         var suggestions: [Suggestion]?
         db.collection(suggestionCollectionString).getDocuments { (querySnapshot, err) in
             if err == nil {
@@ -38,10 +38,60 @@ class FirebaseService {
                         let newSuggestion = Suggestion(docId: docId, data: doc.data())
                         return newSuggestion
                     })
-                    // completionHandler(suggestions)
                 }
             }
             completionHandler(suggestions)
+        }
+    }
+    
+    static func getSuggestion(docId: String, completionHandler: @escaping (_ suggestion: Suggestion?) -> ()) {
+        var suggestion: Suggestion?
+        let docRef: DocumentReference = db.collection(suggestionCollectionString).document(docId)
+        docRef.getDocument { (querySnapshot, err) in
+            if let snapshot = querySnapshot, snapshot.exists {
+                let data = snapshot.data()!
+                suggestion = Suggestion(docId: docId, data: data)
+            }
+            completionHandler(suggestion)
+        }
+    }
+    
+    static func updateSuggestion(newSuggestion: Suggestion, completionHandler: @escaping (_ success: Bool) -> ()) {
+        let docRef: DocumentReference = db.collection(suggestionCollectionString).document(newSuggestion.docId)
+        docRef.setData([
+            "dateCreated": newSuggestion.dateCreated as Any,
+            "likes": newSuggestion.likes as Any,
+            "message": newSuggestion.message as Any
+        ]) { (error) in
+            completionHandler(error == nil)
+        }
+    }
+    
+    static func incrementLike(docId: String, completionHandler: @escaping (_ success: Bool) -> ())  {
+        getSuggestion(docId: docId) { (suggestion) in
+            var successResult = false
+            if var suggestion = suggestion {
+                let newCount = suggestion.likes! + 1
+                suggestion.likes = newCount
+                updateSuggestion(newSuggestion: suggestion, completionHandler: { (success) in
+                    successResult = success
+                })
+            }
+            completionHandler(successResult)
+        }
+    }
+    
+    static func decrementLike(docId: String, completionHandler: @escaping (_ success: Bool) -> ()) {
+        getSuggestion(docId: docId) { (suggestion) in
+            var successResult = false
+            if var suggestion = suggestion {
+                let newCount = suggestion.likes! - 1
+                suggestion.likes = newCount
+                updateSuggestion(newSuggestion: suggestion, completionHandler: { (success) in
+                    successResult = success
+                })
+            }
+            completionHandler(successResult)
         }
     }
     
