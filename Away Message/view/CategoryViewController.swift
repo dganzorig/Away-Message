@@ -42,12 +42,12 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
         self.lastSelectedIndex = indexPath.row
         
         // transition to screen showing messages for selected category
-        performSegue(withIdentifier: "toSuggestions", sender: self)
+        performSegue(withIdentifier: "toSuggestionsPageViewController", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toSuggestions" {
-            let destinationVC: CategorySuggestionViewController = segue.destination as! CategorySuggestionViewController
+        if segue.identifier == "toSuggestionsPageViewController" {
+            let destinationVC: SuggestionsPageViewController = segue.destination as! SuggestionsPageViewController
             destinationVC.categoryEntry = self.getEntryAtIndex(index: self.lastSelectedIndex)
         }
     }

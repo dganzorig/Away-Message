@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EAZ-37-JnQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jMk-EA-HXo">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -691,6 +691,14 @@
             </objects>
             <point key="canvasLocation" x="6950.7246376811599" y="19.565217391304348"/>
         </scene>
+        <!--Suggestions Page View Controller-->
+        <scene sceneID="Eag-n9-dnO">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Bl2-l3-9EW" customClass="SuggestionsPageViewController" customModule="Away_Message" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PL5-JG-rlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8193" y="790"/>
+        </scene>
         <!--Category View Controller-->
         <scene sceneID="KXZ-Tb-64p">
             <objects>
@@ -765,29 +773,29 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="X71-mS-Mxe" id="Dd7-bm-EDD"/>
-                        <segue destination="t2U-TL-0Ms" kind="show" identifier="toSuggestions" id="mur-Dn-kIW"/>
+                        <segue destination="Bl2-l3-9EW" kind="show" identifier="toSuggestionsPageViewController" id="enY-UJ-1pf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7P-dt-RxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6530.434782608696" y="789.94565217391312"/>
+            <point key="canvasLocation" x="7209" y="790"/>
         </scene>
         <!--Category Suggestion View Controller-->
         <scene sceneID="5kb-UH-GbZ">
             <objects>
-                <viewController id="t2U-TL-0Ms" customClass="CategorySuggestionViewController" customModule="Away_Message" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbSuggestions" id="t2U-TL-0Ms" customClass="CategorySuggestionViewController" customModule="Away_Message" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r1N-Ic-Uhn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scg-TP-1rr">
-                                <rect key="frame" x="169.33333333333334" y="84" width="75.333333333333343" height="26"/>
+                                <rect key="frame" x="169.33333333333334" y="40" width="75.333333333333343" height="26"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r1z-iC-3NQ">
-                                <rect key="frame" x="0.0" y="130" width="414" height="606"/>
+                                <rect key="frame" x="0.0" y="86" width="414" height="580"/>
                                 <color key="backgroundColor" red="0.99908632040000001" green="0.57451718910000005" blue="0.27580839579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -860,7 +868,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="HTJ-fe-9Zc" firstAttribute="bottom" secondItem="r1z-iC-3NQ" secondAttribute="bottom" id="79a-O4-alR"/>
+                            <constraint firstItem="HTJ-fe-9Zc" firstAttribute="bottom" secondItem="r1z-iC-3NQ" secondAttribute="bottom" constant="70" id="79a-O4-alR"/>
                             <constraint firstItem="scg-TP-1rr" firstAttribute="top" secondItem="HTJ-fe-9Zc" secondAttribute="top" constant="20" id="8bI-l7-dKn"/>
                             <constraint firstItem="scg-TP-1rr" firstAttribute="centerX" secondItem="r1N-Ic-Uhn" secondAttribute="centerX" id="MVz-mk-3Qh"/>
                             <constraint firstItem="r1z-iC-3NQ" firstAttribute="top" secondItem="scg-TP-1rr" secondAttribute="bottom" constant="20" id="d2x-D3-eWQ"/>
@@ -876,7 +884,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZqR-Ir-aR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7423.188405797102" y="789.94565217391312"/>
+            <point key="canvasLocation" x="7762" y="1625"/>
+        </scene>
+        <!--Submit Suggestion View Controller-->
+        <scene sceneID="E9q-Fh-nke">
+            <objects>
+                <viewController storyboardIdentifier="sbSuggestionSubmit" id="vq2-0D-gAr" customClass="SubmitSuggestionViewController" customModule="Away_Message" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vh2-Wi-NDE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5X-Px-grM">
+                                <rect key="frame" x="30" y="70" width="354" height="40"/>
+                                <string key="text">Have your own favorite?
+Submit a suggestion!</string>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ize-mP-vDg">
+                                <rect key="frame" x="40" y="135" width="334" height="479"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZDE-E0-Scu">
+                                        <rect key="frame" x="2" y="2" width="330" height="475"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99908632040000001" green="0.57451718910000005" blue="0.27580839579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZDE-E0-Scu" secondAttribute="bottom" constant="2" id="07x-jq-qjR"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZDE-E0-Scu" secondAttribute="trailing" constant="2" id="1Cv-gU-1T2"/>
+                                    <constraint firstItem="ZDE-E0-Scu" firstAttribute="top" secondItem="ize-mP-vDg" secondAttribute="top" constant="2" id="JjC-jp-zRk"/>
+                                    <constraint firstItem="ZDE-E0-Scu" firstAttribute="leading" secondItem="ize-mP-vDg" secondAttribute="leading" constant="2" id="aWP-Gd-PaI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfe-vh-qGA">
+                                <rect key="frame" x="172.66666666666666" y="634" width="69" height="32"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitPressed:" destination="vq2-0D-gAr" eventType="touchUpInside" id="GvX-uV-pgP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ah1-X3-gZi" firstAttribute="trailing" secondItem="ize-mP-vDg" secondAttribute="trailing" constant="40" id="Bpw-qq-ixt"/>
+                            <constraint firstItem="ize-mP-vDg" firstAttribute="centerX" secondItem="Vh2-Wi-NDE" secondAttribute="centerX" id="E5n-vO-cNh"/>
+                            <constraint firstItem="Yfe-vh-qGA" firstAttribute="centerX" secondItem="Vh2-Wi-NDE" secondAttribute="centerX" id="Lm5-78-tmv"/>
+                            <constraint firstItem="Yfe-vh-qGA" firstAttribute="top" secondItem="ize-mP-vDg" secondAttribute="bottom" constant="20" id="NY3-A8-c37"/>
+                            <constraint firstAttribute="trailing" secondItem="R5X-Px-grM" secondAttribute="trailing" constant="30" id="doL-Bz-4di"/>
+                            <constraint firstItem="ize-mP-vDg" firstAttribute="top" secondItem="R5X-Px-grM" secondAttribute="bottom" constant="25" id="fMv-ca-qOp"/>
+                            <constraint firstItem="ize-mP-vDg" firstAttribute="leading" secondItem="Ah1-X3-gZi" secondAttribute="leading" constant="40" id="fX1-gI-ury"/>
+                            <constraint firstItem="R5X-Px-grM" firstAttribute="top" secondItem="Ah1-X3-gZi" secondAttribute="top" constant="50" id="kLc-rm-SPZ"/>
+                            <constraint firstItem="Ah1-X3-gZi" firstAttribute="bottom" secondItem="Yfe-vh-qGA" secondAttribute="bottom" constant="70" id="qQq-hi-x1g"/>
+                            <constraint firstItem="R5X-Px-grM" firstAttribute="leading" secondItem="Vh2-Wi-NDE" secondAttribute="leading" constant="30" id="qw9-WY-Tpm"/>
+                            <constraint firstItem="R5X-Px-grM" firstAttribute="centerX" secondItem="Vh2-Wi-NDE" secondAttribute="centerX" id="zuO-2K-sJn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ah1-X3-gZi"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="ZDE-E0-Scu" id="xAi-WF-ZrN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mwC-d3-jcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8613" y="1625"/>
         </scene>
     </scenes>
     <resources>
