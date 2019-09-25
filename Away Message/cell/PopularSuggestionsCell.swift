@@ -68,27 +68,27 @@ class PopularSuggestionsCell: UITableViewCell {
     }
     
     @IBAction func heartPressed(_ sender: UIButton) {
-        let likeState = getLikeState()
-        
-        if likeState == .none {
-            // person wants to like the message
-            if let suggestion = suggestion {
+        if let suggestion = suggestion {
+            let likeState: LikeState = RealmService.hasLikedSuggestion(docId: suggestion.docId) ? .like : .none
+            
+            if likeState == .none {
+                // person wants to like the message
                 FirebaseService.incrementLike(docId: suggestion.docId) { (success) in
                     if (success) {
                         self.viewController?.showToast(message: "You have liked the suggestion")
                         RealmService.addLikedSuggestion(docId: suggestion.docId)
+                        self.reloadTableView()
                     } else {
                         self.viewController?.showToast(message: "There was an error liking the suggestion")
                     }
                 }
-            }
-        } else {
-            // person wants to unlike the message
-            if let suggestion = suggestion {
+            } else {
+                // person wants to unlike the message
                 FirebaseService.decrementLike(docId: suggestion.docId) { (success) in
                     if (success) {
                         self.viewController?.showToast(message: "You have unliked the suggestion")
                         RealmService.removeLikedSuggestion(docId: suggestion.docId)
+                        self.reloadTableView()
                     } else {
                         self.viewController?.showToast(message: "There was an error unliking the suggestion")
                     }
@@ -97,21 +97,10 @@ class PopularSuggestionsCell: UITableViewCell {
         }
     }
     
-    private func getLikeState() -> LikeState {
-        var likeState: LikeState = .none
-        if let suggestion = self.suggestion {
-            if RealmService.hasLikedSuggestion(docId: suggestion.docId) {
-                likeState = .like
-            }
+    private func reloadTableView() {
+        if let viewController = self.viewController {
+            viewController.tableView.reloadData()
         }
-        return likeState
     }
-    
-    /*private func updateCellUI() {
-        self.messageLabel.text = self.suggestion?.message ?? ""
-        // solid heart only if Suggestion is set and Suggestion is in locally-saved liked messages
-        let heartImageColor = (getLikeState() == .like) ? UIColor.red : UIColor.lightGray
-        heartButton.setTitleColor(heartImageColor, for: .normal)
-    }*/
     
 }

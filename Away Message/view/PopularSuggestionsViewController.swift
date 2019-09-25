@@ -58,18 +58,23 @@ extension PopularSuggestionsViewController: UITableViewDelegate, UITableViewData
         if let suggestion = self.suggestions?[indexPath.row] {
             cell.viewController = self
             cell.suggestion = suggestion
-            // cell.messageLabel.text = suggestion.message
+            cell.messageLabel.text = suggestion.message
+            
+            let likeState: LikeState = RealmService.hasLikedSuggestion(docId: suggestion.docId) ? .like : .none
+            let likeButtonColor: UIColor = (likeState == .like) ? UIColor.red : UIColor.lightGray
+            cell.heartButton.setTitleColor(likeButtonColor, for: .normal)
         }
+        
         return cell
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        // first hide from view
-        cell.transform = CGAffineTransform(translationX: UIScreen.main.bounds.width, y: 0.0)
-        
-        UIView.animate(withDuration: 0.5, delay: 0.2 * Double(indexPath.row + 1), options: .curveEaseOut, animations: {
-            cell.transform = .identity
-        }, completion: nil)
-    }
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        // first hide from view
+//        cell.transform = CGAffineTransform(translationX: UIScreen.main.bounds.width, y: 0.0)
+//
+//        UIView.animate(withDuration: 0.5, delay: 0.2 * Double(indexPath.row + 1), options: .curveEaseOut, animations: {
+//            cell.transform = .identity
+//        }, completion: nil)
+//    }
     
 }
