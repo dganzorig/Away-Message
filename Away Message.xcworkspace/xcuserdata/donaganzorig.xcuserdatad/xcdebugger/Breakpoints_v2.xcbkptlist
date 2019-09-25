@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Away Message/cell/PopularSuggestionsCell.swift"
-            timestampString = "591060697.925513"
+            timestampString = "591062972.320819"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "heartPressed(_:)"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "getLikeState()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

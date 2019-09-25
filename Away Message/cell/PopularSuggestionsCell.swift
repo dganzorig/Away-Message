@@ -14,16 +14,11 @@ class PopularSuggestionsCell: UITableViewCell {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var heartButton: UIButton!
     var viewController: PopularSuggestionsViewController?
-    var suggestion: Suggestion? {
-        didSet {
-            updateCellUI()
-        }
-    }
+    var suggestion: Suggestion?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.updateCellUI()
     }
 
     @IBAction func clipboardPressed(_ sender: UIButton) {
@@ -100,8 +95,6 @@ class PopularSuggestionsCell: UITableViewCell {
                 }
             }
         }
-        
-        self.updateCellUI()
     }
     
     private func getLikeState() -> LikeState {
@@ -114,11 +107,11 @@ class PopularSuggestionsCell: UITableViewCell {
         return likeState
     }
     
-    private func updateCellUI() {
+    /*private func updateCellUI() {
         self.messageLabel.text = self.suggestion?.message ?? ""
         // solid heart only if Suggestion is set and Suggestion is in locally-saved liked messages
-        let heartImageText = getLikeState() == .like ? "" : ""
-        heartButton.setTitle(heartImageText, for: .normal)
-    }
+        let heartImageColor = (getLikeState() == .like) ? UIColor.red : UIColor.lightGray
+        heartButton.setTitleColor(heartImageColor, for: .normal)
+    }*/
     
 }

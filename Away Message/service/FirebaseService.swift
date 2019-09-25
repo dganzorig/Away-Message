@@ -75,9 +75,11 @@ class FirebaseService {
                 suggestion.likes = newCount
                 updateSuggestion(newSuggestion: suggestion, completionHandler: { (success) in
                     successResult = success
+                    completionHandler(successResult)
                 })
+            } else {
+                completionHandler(false)
             }
-            completionHandler(successResult)
         }
     }
     
@@ -89,9 +91,11 @@ class FirebaseService {
                 suggestion.likes = newCount
                 updateSuggestion(newSuggestion: suggestion, completionHandler: { (success) in
                     successResult = success
+                    completionHandler(successResult)
                 })
+            } else {
+                completionHandler(false)
             }
-            completionHandler(successResult)
         }
     }
     

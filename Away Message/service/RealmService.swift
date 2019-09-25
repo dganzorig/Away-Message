@@ -41,7 +41,9 @@ class RealmService {
     static func removeLikedSuggestion(docId: String) {
         guard likedSuggestionInstances(docId: docId) > 0 else { return }
         let queryResults: Results<RealmSuggestion> = realm.objects(RealmSuggestion.self).filter("docId = '\(docId)'")
-        realm.delete(queryResults)
+        try! realm.write {
+            realm.delete(queryResults)
+        }
     }
     
 }
