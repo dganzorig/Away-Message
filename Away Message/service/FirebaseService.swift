@@ -44,6 +44,25 @@ class FirebaseService {
         }
     }
     
+    static func getMostPopularSuggestions(n: Int, completionHandler: @escaping (_ suggestions: [Suggestion]?) -> ()) {
+        var suggestions: [Suggestion]?
+        db.collection(suggestionCollectionString)
+            .order(by: "popularity", descending: true)
+            .limit(to: n)
+            .addSnapshotListener { (querySnapshot, err) in
+                if err == nil {
+                    if let snapshot = querySnapshot {
+                        suggestions = snapshot.documents.map({ (doc) -> Suggestion in
+                            let docId: String = doc.documentID
+                            let newSuggestion = Suggestion(docId: docId, data: doc.data())
+                            return newSuggestion
+                        })
+                    }
+                }
+                completionHandler(suggestions)
+            }
+    }
+    
     static func getSuggestion(docId: String, completionHandler: @escaping (_ suggestion: Suggestion?) -> ()) {
         var suggestion: Suggestion?
         let docRef: DocumentReference = db.collection(suggestionCollectionString).document(docId)

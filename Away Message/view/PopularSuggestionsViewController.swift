@@ -31,9 +31,9 @@ class PopularSuggestionsViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        FirebaseService.getAllSuggestions { (suggestions) in
+        FirebaseService.getMostPopularSuggestions(n: 3) { (suggestions) in
             if suggestions == nil {
-                self.showToast(message: "Error loading suggestions")
+                self.showToast(message: "Error loading popular suggestions")
             } else {
                 self.suggestions = suggestions
                 self.tableView.reloadData()
