@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jMk-EA-HXo">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EAZ-37-JnQ">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,16 +25,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sah-gz-qxk" userLabel="Container">
-                                <rect key="frame" x="30" y="74" width="354" height="652"/>
+                                <rect key="frame" x="30" y="54" width="354" height="672"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to SignOff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTF-eJ-QHH">
-                                        <rect key="frame" x="47.666666666666686" y="247.66666666666669" width="259" height="26"/>
+                                        <rect key="frame" x="47.666666666666686" y="255.66666666666669" width="259" height="26"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get started by setting an away message." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWd-RR-qYX">
-                                        <rect key="frame" x="-18.333333333333343" y="336.66666666666669" width="391" height="44"/>
+                                        <rect key="frame" x="-18.333333333333343" y="347.66666666666669" width="391" height="44"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -52,8 +50,8 @@
                                     <constraint firstItem="OWd-RR-qYX" firstAttribute="leading" secondItem="sah-gz-qxk" secondAttribute="leading" constant="-18.5" id="zw0-dB-JnU"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y11-CL-erH">
-                                <rect key="frame" x="152" y="536.66666666666663" width="110" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y11-CL-erH">
+                                <rect key="frame" x="153" y="536.66666666666663" width="108" height="31"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
                                 <state key="normal" title="❯ Continue">
                                     <color key="titleColor" red="0.090196078430000007" green="0.1647058824" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -63,6 +61,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sah-gz-qxk" secondAttribute="bottom" constant="10" id="7PO-q3-pGl"/>
@@ -74,7 +73,6 @@
                             <constraint firstItem="sah-gz-qxk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pzB-m0-1Cp"/>
                             <constraint firstItem="sah-gz-qxk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="rSr-al-iUz"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bdi-ZK-inL"/>
                     <connections>
@@ -98,26 +96,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need to know how to switch between apps for this task" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaY-SS-vDU">
-                                <rect key="frame" x="10.333333333333343" y="94" width="393.33333333333326" height="46"/>
+                                <rect key="frame" x="10.333333333333343" y="74" width="393.33333333333326" height="46"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AR-ZL-wvR">
-                                <rect key="frame" x="152" y="680" width="110" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AR-ZL-wvR">
+                                <rect key="frame" x="153" y="680" width="108" height="31"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
                                 <state key="normal" title="❯ Continue">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQL-FX-0UO" customClass="AnimationView" customModule="Lottie">
-                                <rect key="frame" x="0.0" y="164" width="414" height="636"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="636"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdp-v4-tyZ">
-                                        <rect key="frame" x="152" y="511" width="110" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdp-v4-tyZ">
+                                        <rect key="frame" x="153" y="531" width="108" height="31"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
                                         <state key="normal" title="❯ Continue">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" systemColor="darkTextColor"/>
                                         </state>
                                         <connections>
                                             <action selector="continuePressed:" destination="DPh-Uz-Z0m" eventType="touchUpInside" id="OeV-vM-YyI"/>
@@ -132,6 +130,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="lxv-ow-nNZ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gQL-FX-0UO" firstAttribute="top" secondItem="lxv-ow-nNZ" secondAttribute="top" constant="100" id="BQD-q5-i65"/>
@@ -145,7 +144,6 @@
                             <constraint firstItem="VaY-SS-vDU" firstAttribute="centerX" secondItem="zj8-L5-cXa" secondAttribute="centerX" id="rpr-MN-IGf"/>
                             <constraint firstItem="gQL-FX-0UO" firstAttribute="width" secondItem="zj8-L5-cXa" secondAttribute="width" id="yUH-mS-zmu"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="lxv-ow-nNZ"/>
                     </view>
                     <connections>
                         <outlet property="animationView" destination="gQL-FX-0UO" id="NPM-hF-qKk"/>
@@ -167,13 +165,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpR-m1-zpU" customClass="AnimationView" customModule="Lottie">
-                                <rect key="frame" x="0.0" y="189" width="414" height="636"/>
+                                <rect key="frame" x="0.0" y="169" width="414" height="636"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NI-CZ-dZc">
-                                        <rect key="frame" x="152" y="506" width="110" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NI-CZ-dZc">
+                                        <rect key="frame" x="153" y="526" width="108" height="31"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
                                         <state key="normal" title="❯ Continue">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" systemColor="darkTextColor"/>
                                         </state>
                                         <connections>
                                             <action selector="continuePressed:" destination="tp1-ru-t6S" eventType="touchUpInside" id="62t-WM-tFa"/>
@@ -187,12 +185,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need to know how to switch between apps for this task" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="une-XI-YPx">
-                                <rect key="frame" x="10.333333333333343" y="94" width="393.33333333333326" height="46"/>
+                                <rect key="frame" x="10.333333333333343" y="74" width="393.33333333333326" height="46"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="SHh-FA-wpy"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bpR-m1-zpU" firstAttribute="height" secondItem="pcV-lc-qAD" secondAttribute="height" constant="-100" id="DLw-fS-xqg"/>
@@ -204,7 +203,6 @@
                             <constraint firstItem="une-XI-YPx" firstAttribute="width" secondItem="pcV-lc-qAD" secondAttribute="width" multiplier="0.95" id="rDs-fn-7om"/>
                             <constraint firstItem="bpR-m1-zpU" firstAttribute="top" secondItem="SHh-FA-wpy" secondAttribute="top" constant="125" id="y69-m8-I6w"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="SHh-FA-wpy"/>
                     </view>
                     <connections>
                         <outlet property="animationView" destination="bpR-m1-zpU" id="Pyh-75-F3L"/>
@@ -237,11 +235,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o70-2Q-hYx">
-                                <rect key="frame" x="152" y="538" width="110" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o70-2Q-hYx">
+                                <rect key="frame" x="153" y="538" width="108" height="31"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
                                 <state key="normal" title="❯ Continue">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="continuePressed:" destination="tp1-ru-t6S" eventType="touchUpInside" id="buK-8s-bIJ"/>
@@ -255,6 +253,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="NiP-gm-tXL"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="o70-2Q-hYx" firstAttribute="top" secondItem="AKa-ZQ-Mqy" secondAttribute="bottom" constant="40" id="5Nj-0e-UCh"/>
@@ -266,7 +265,6 @@
                             <constraint firstItem="o70-2Q-hYx" firstAttribute="centerX" secondItem="n15-7o-PbF" secondAttribute="centerX" id="cWt-st-5WS"/>
                             <constraint firstItem="X1M-7N-QDu" firstAttribute="centerY" secondItem="n15-7o-PbF" secondAttribute="centerY" multiplier="0.6" id="zhq-cA-w1H"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="NiP-gm-tXL"/>
                     </view>
                     <connections>
                         <outlet property="continueButton" destination="o70-2Q-hYx" id="myK-A3-slV"/>
@@ -286,7 +284,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EAZ-37-JnQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QSr-Om-pev">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -327,8 +325,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DND_Screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="R3c-tk-gRS">
                                 <rect key="frame" x="82.666666666666671" y="297.66666666666669" width="248.66666666666663" height="331.00000000000006"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvK-S0-VXn">
-                                <rect key="frame" x="152" y="680" width="110" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvK-S0-VXn">
+                                <rect key="frame" x="153" y="680" width="108" height="31"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
                                 <state key="normal" title="❯ Continue">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -338,6 +336,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="P8f-TE-N3a"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="R3c-tk-gRS" firstAttribute="height" secondItem="uxM-wf-jlO" secondAttribute="height" multiplier="0.45" id="1aU-TV-dEb"/>
@@ -353,7 +352,6 @@
                             <constraint firstItem="0s9-oM-K6X" firstAttribute="centerY" secondItem="uxM-wf-jlO" secondAttribute="centerY" multiplier="0.6" id="gcy-fd-Mw4"/>
                             <constraint firstItem="P8f-TE-N3a" firstAttribute="bottom" secondItem="TvK-S0-VXn" secondAttribute="bottom" constant="25" id="pny-DW-qhL"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="P8f-TE-N3a"/>
                     </view>
                     <connections>
                         <outlet property="chooseLabel" destination="0s9-oM-K6X" id="EnR-AK-7Iw"/>
@@ -389,10 +387,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DND Toggle Screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="i11-cl-rut">
-                                <rect key="frame" x="62" y="260.66666666666663" width="290" height="390.33333333333348"/>
+                                <rect key="frame" x="62" y="260.66666666666674" width="290" height="390.33333333333326"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-Nk-Kgi">
-                                <rect key="frame" x="152" y="685" width="110" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-Nk-Kgi">
+                                <rect key="frame" x="153" y="685" width="108" height="31"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
                                 <state key="normal" title="❯ Continue">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -403,6 +401,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="O0c-g6-ZJk"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WLb-Nk-Kgi" firstAttribute="centerX" secondItem="qTD-aU-MZz" secondAttribute="centerX" id="63f-WV-cJO"/>
@@ -416,7 +415,6 @@
                             <constraint firstItem="i11-cl-rut" firstAttribute="top" secondItem="6cK-Sa-bCy" secondAttribute="bottom" constant="30" id="tiF-qQ-ols"/>
                             <constraint firstItem="6cK-Sa-bCy" firstAttribute="centerY" secondItem="qTD-aU-MZz" secondAttribute="centerY" multiplier="0.6" id="ulx-em-dyR"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="O0c-g6-ZJk"/>
                     </view>
                     <connections>
                         <outlet property="continueButton" destination="WLb-Nk-Kgi" id="YaW-yd-XEj"/>
@@ -453,8 +451,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DND Contacts" translatesAutoresizingMaskIntoConstraints="NO" id="PdK-Xj-z89">
                                 <rect key="frame" x="41.333333333333343" y="250.66666666666663" width="331.33333333333326" height="405"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikp-qa-tem">
-                                <rect key="frame" x="152" y="685" width="110" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikp-qa-tem">
+                                <rect key="frame" x="153" y="685" width="108" height="31"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
                                 <state key="normal" title="❯ Continue">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -466,6 +464,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gul-wo-byc"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="dZ5-Jl-aox" firstAttribute="centerY" secondItem="s9j-gW-Iqr" secondAttribute="centerY" multiplier="0.6" id="AMT-ds-JcI"/>
@@ -479,7 +478,6 @@
                             <constraint firstItem="dZ5-Jl-aox" firstAttribute="centerX" secondItem="s9j-gW-Iqr" secondAttribute="centerX" id="j1m-a0-Oso"/>
                             <constraint firstItem="PdK-Xj-z89" firstAttribute="width" secondItem="s9j-gW-Iqr" secondAttribute="width" multiplier="0.8" id="reN-gC-pDN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Gul-wo-byc"/>
                     </view>
                     <connections>
                         <outlet property="continueButton" destination="ikp-qa-tem" id="d3R-CS-mEN"/>
@@ -516,8 +514,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DND Message Button" translatesAutoresizingMaskIntoConstraints="NO" id="2JV-KF-bIk">
                                 <rect key="frame" x="41.333333333333343" y="255.66666666666663" width="331.33333333333326" height="405"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3l-r1-P4c">
-                                <rect key="frame" x="152" y="685" width="110" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3l-r1-P4c">
+                                <rect key="frame" x="153" y="685" width="108" height="31"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
                                 <state key="normal" title="❯ Continue">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -529,6 +527,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="UWl-nn-f7p"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2JV-KF-bIk" firstAttribute="top" secondItem="3L8-6J-uJJ" secondAttribute="bottom" constant="25" id="3A5-sK-CpD"/>
@@ -542,7 +541,6 @@
                             <constraint firstItem="3L8-6J-uJJ" firstAttribute="centerX" secondItem="diM-Ip-Hmd" secondAttribute="centerX" id="rtB-4Y-56Y"/>
                             <constraint firstItem="t3l-r1-P4c" firstAttribute="centerX" secondItem="diM-Ip-Hmd" secondAttribute="centerX" id="t8z-YA-GKV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="UWl-nn-f7p"/>
                     </view>
                     <connections>
                         <outlet property="continueButton" destination="t3l-r1-P4c" id="iXS-Q0-4Qe"/>
@@ -579,8 +577,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DND Message" translatesAutoresizingMaskIntoConstraints="NO" id="dYj-Qh-AX4">
                                 <rect key="frame" x="41.333333333333343" y="255.66666666666663" width="331.33333333333326" height="405"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xe-Bk-mVT">
-                                <rect key="frame" x="152" y="685" width="110" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xe-Bk-mVT">
+                                <rect key="frame" x="153" y="685" width="108" height="31"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
                                 <state key="normal" title="❯ Continue">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -591,8 +589,8 @@
                                     <action selector="continuePressed:" destination="yPc-uX-vQe" eventType="touchUpInside" id="X3W-jv-QFJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKo-lX-cpi">
-                                <rect key="frame" x="369" y="79" width="30" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKo-lX-cpi">
+                                <rect key="frame" x="369" y="59" width="30" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <state key="normal" title="?">
                                     <color key="titleColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -602,12 +600,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestions:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlz-hk-MOm">
-                                <rect key="frame" x="263.66666666666669" y="86" width="95.333333333333314" height="15"/>
+                                <rect key="frame" x="263.66666666666669" y="66" width="95.333333333333314" height="15"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.4793452024" blue="0.99908632040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="KAU-C3-gjH"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="kKo-lX-cpi" firstAttribute="leading" secondItem="Jlz-hk-MOm" secondAttribute="trailing" constant="10" id="4Nd-xS-wnX"/>
@@ -625,7 +624,6 @@
                             <constraint firstItem="KAU-C3-gjH" firstAttribute="bottom" secondItem="2xe-Bk-mVT" secondAttribute="bottom" constant="20" id="u0W-xM-hPh"/>
                             <constraint firstItem="dYj-Qh-AX4" firstAttribute="top" secondItem="ROt-Wn-vBk" secondAttribute="bottom" constant="25" id="wan-9J-t1N"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="KAU-C3-gjH"/>
                     </view>
                     <connections>
                         <outlet property="continueButton" destination="2xe-Bk-mVT" id="rpR-hz-P8r"/>
@@ -662,8 +660,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnH-Yw-Xv2">
-                                <rect key="frame" x="124.66666666666669" y="499.33333333333326" width="165" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnH-Yw-Xv2">
+                                <rect key="frame" x="125.66666666666669" y="499.33333333333326" width="163" height="34"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="❮ Back to Beginning"/>
                                 <connections>
@@ -671,6 +669,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="0vM-bM-KbD"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gjS-bq-FwP" firstAttribute="centerX" secondItem="rhN-lt-pUt" secondAttribute="centerX" id="7mN-e1-qo0"/>
@@ -680,7 +679,6 @@
                             <constraint firstItem="mnH-Yw-Xv2" firstAttribute="centerX" secondItem="rhN-lt-pUt" secondAttribute="centerX" id="gef-pj-awB"/>
                             <constraint firstItem="Wtf-Ge-UIG" firstAttribute="top" secondItem="gjS-bq-FwP" secondAttribute="bottom" constant="35" id="wQR-D5-IPL"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0vM-bM-KbD"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="mnH-Yw-Xv2" id="hob-bT-NdW"/>
@@ -708,20 +706,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away Message Categories:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPr-hr-W3h">
-                                <rect key="frame" x="62.333333333333343" y="89" width="289.66666666666663" height="20"/>
+                                <rect key="frame" x="62.333333333333343" y="69" width="289.66666666666663" height="20"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X71-mS-Mxe">
-                                <rect key="frame" x="0.0" y="134" width="414" height="602"/>
+                                <rect key="frame" x="0.0" y="114" width="414" height="622"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="Tst-1g-JDS" customClass="CategoryCell" customModule="Away_Message" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tst-1g-JDS" id="LXd-HA-70Z">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😊" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCy-0C-I9b">
@@ -760,6 +758,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="xVZ-XZ-fAi"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="X71-mS-Mxe" firstAttribute="centerX" secondItem="tE3-rc-DcN" secondAttribute="centerX" id="2f0-fs-JpS"/>
@@ -769,7 +768,6 @@
                             <constraint firstItem="X71-mS-Mxe" firstAttribute="width" secondItem="tE3-rc-DcN" secondAttribute="width" id="v8M-Nb-q7I"/>
                             <constraint firstItem="QPr-hr-W3h" firstAttribute="centerX" secondItem="tE3-rc-DcN" secondAttribute="centerX" id="yIa-wg-kXP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="xVZ-XZ-fAi"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="X71-mS-Mxe" id="Dd7-bm-EDD"/>
@@ -789,25 +787,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scg-TP-1rr">
-                                <rect key="frame" x="169.33333333333334" y="40" width="75.333333333333343" height="26"/>
+                                <rect key="frame" x="169.33333333333334" y="20" width="75.333333333333343" height="26"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r1z-iC-3NQ">
-                                <rect key="frame" x="0.0" y="86" width="414" height="610"/>
+                                <rect key="frame" x="0.0" y="66" width="414" height="630"/>
                                 <color key="backgroundColor" red="0.99908632040000001" green="0.57451718910000005" blue="0.27580839579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categorySuggestionCell" id="o5l-WK-EXy" customClass="CategorySuggestionCell" customModule="Away_Message" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o5l-WK-EXy" id="caN-xG-3vu">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o5l-WK-EXy" id="caN-xG-3vu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tSH-X6-3lq">
-                                                    <rect key="frame" x="30" y="10" width="354" height="59"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSH-X6-3lq">
+                                                    <rect key="frame" x="30" y="10" width="354" height="84"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e47-oL-GPW">
                                                             <rect key="frame" x="20" y="45" width="314" height="19"/>
@@ -815,7 +813,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9q-ni-Oad">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9q-ni-Oad">
                                                             <rect key="frame" x="279" y="10" width="30" height="35"/>
                                                             <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="23"/>
                                                             <state key="normal" title="">
@@ -825,7 +823,7 @@
                                                                 <action selector="clipboardPressed:" destination="o5l-WK-EXy" eventType="touchUpInside" id="KgG-eu-KUP"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMm-aS-Nl0">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMm-aS-Nl0">
                                                             <rect key="frame" x="314" y="10" width="30" height="35"/>
                                                             <fontDescription key="fontDescription" name="FontAwesome5Brands-Regular" family="Font Awesome 5 Brands" pointSize="23"/>
                                                             <state key="normal" title="">
@@ -866,6 +864,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="HTJ-fe-9Zc"/>
                         <color key="backgroundColor" red="0.21960784310000001" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HTJ-fe-9Zc" firstAttribute="bottom" secondItem="r1z-iC-3NQ" secondAttribute="bottom" constant="40" id="79a-O4-alR"/>
@@ -875,7 +874,6 @@
                             <constraint firstItem="r1z-iC-3NQ" firstAttribute="centerX" secondItem="r1N-Ic-Uhn" secondAttribute="centerX" id="dnD-4Q-Gca"/>
                             <constraint firstItem="r1z-iC-3NQ" firstAttribute="width" secondItem="r1N-Ic-Uhn" secondAttribute="width" id="psF-77-3BN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="HTJ-fe-9Zc"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="r1z-iC-3NQ" id="Udl-Cn-NuE"/>
@@ -895,7 +893,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5X-Px-grM">
-                                <rect key="frame" x="30" y="70" width="354" height="48"/>
+                                <rect key="frame" x="30" y="50" width="354" height="48"/>
                                 <string key="text">Have your own favorite?
 Submit a suggestion!</string>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
@@ -903,10 +901,10 @@ Submit a suggestion!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ize-mP-vDg">
-                                <rect key="frame" x="40" y="143" width="334" height="501"/>
+                                <rect key="frame" x="40" y="123" width="334" height="521"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZDE-E0-Scu">
-                                        <rect key="frame" x="2" y="2" width="330" height="497"/>
+                                        <rect key="frame" x="2" y="2" width="330" height="517"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
@@ -921,7 +919,7 @@ Submit a suggestion!</string>
                                     <constraint firstItem="ZDE-E0-Scu" firstAttribute="leading" secondItem="ize-mP-vDg" secondAttribute="leading" constant="2" id="aWP-Gd-PaI"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfe-vh-qGA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfe-vh-qGA">
                                 <rect key="frame" x="172.66666666666666" y="664" width="69" height="32"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="Submit"/>
@@ -930,6 +928,7 @@ Submit a suggestion!</string>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ah1-X3-gZi"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ah1-X3-gZi" firstAttribute="trailing" secondItem="ize-mP-vDg" secondAttribute="trailing" constant="40" id="Bpw-qq-ixt"/>
@@ -944,7 +943,6 @@ Submit a suggestion!</string>
                             <constraint firstItem="R5X-Px-grM" firstAttribute="leading" secondItem="Vh2-Wi-NDE" secondAttribute="leading" constant="30" id="qw9-WY-Tpm"/>
                             <constraint firstItem="R5X-Px-grM" firstAttribute="centerX" secondItem="Vh2-Wi-NDE" secondAttribute="centerX" id="zuO-2K-sJn"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Ah1-X3-gZi"/>
                     </view>
                     <connections>
                         <outlet property="textView" destination="ZDE-E0-Scu" id="xAi-WF-ZrN"/>
@@ -963,13 +961,13 @@ Submit a suggestion!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Submissions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7F-vR-AbP">
-                                <rect key="frame" x="71.666666666666686" y="40" width="271" height="24"/>
+                                <rect key="frame" x="71.666666666666686" y="20" width="271" height="24"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kbs-e5-AOt">
-                                <rect key="frame" x="0.0" y="84" width="414" height="612"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="632"/>
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="popularSuggestionsCell" rowHeight="142" id="81v-2N-4fQ" customClass="PopularSuggestionsCell" customModule="Away_Message" customModuleProvider="target">
@@ -982,7 +980,7 @@ Submit a suggestion!</string>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgP-2p-RNM">
                                                     <rect key="frame" x="20" y="10" width="374" height="122"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwA-gz-rzD">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwA-gz-rzD">
                                                             <rect key="frame" x="334" y="82" width="30" height="35"/>
                                                             <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="23"/>
                                                             <state key="normal" title="">
@@ -998,7 +996,7 @@ Submit a suggestion!</string>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ega-Oe-UAt">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ega-Oe-UAt">
                                                             <rect key="frame" x="334" y="10" width="30" height="35"/>
                                                             <fontDescription key="fontDescription" name="FontAwesome5Brands-Regular" family="Font Awesome 5 Brands" pointSize="23"/>
                                                             <state key="normal" title="">
@@ -1008,7 +1006,7 @@ Submit a suggestion!</string>
                                                                 <action selector="twitterPressed:" destination="81v-2N-4fQ" eventType="touchUpInside" id="l4d-DR-rxD"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOx-EZ-xJ6">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOx-EZ-xJ6">
                                                             <rect key="frame" x="299" y="10" width="30" height="35"/>
                                                             <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="23"/>
                                                             <state key="normal" title="">
@@ -1053,6 +1051,7 @@ Submit a suggestion!</string>
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="tfy-Dw-Nc0"/>
                         <color key="backgroundColor" red="0.99908632040000001" green="0.57451718910000005" blue="0.27580839579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Kbs-e5-AOt" firstAttribute="centerX" secondItem="IDM-pe-hXN" secondAttribute="centerX" id="2Iu-9g-HWb"/>
@@ -1062,7 +1061,6 @@ Submit a suggestion!</string>
                             <constraint firstItem="D7F-vR-AbP" firstAttribute="top" secondItem="tfy-Dw-Nc0" secondAttribute="top" constant="20" id="qD0-oy-lSA"/>
                             <constraint firstItem="Kbs-e5-AOt" firstAttribute="width" secondItem="IDM-pe-hXN" secondAttribute="width" id="rkW-Nl-skJ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="tfy-Dw-Nc0"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Kbs-e5-AOt" id="uH6-p4-BOm"/>
@@ -1074,6 +1072,9 @@ Submit a suggestion!</string>
             <point key="canvasLocation" x="8911.5942028985519" y="1602.717391304348"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cMt-ky-bgT"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="DND Contacts" width="250" height="429.33334350585938"/>
         <image name="DND Message" width="250" height="444.66665649414062"/>
@@ -1081,8 +1082,8 @@ Submit a suggestion!</string>
         <image name="DND Toggle Screenshot" width="250" height="428"/>
         <image name="DND_Screenshot" width="250" height="430"/>
         <image name="Settings" width="49.333332061767578" height="49.333332061767578"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="cMt-ky-bgT"/>
-    </inferredMetricsTieBreakers>
 </document>
